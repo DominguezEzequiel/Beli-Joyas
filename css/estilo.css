@@ -1,0 +1,382 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: small-caps italic georgia;
+}
+
+/* Fonts */
+
+/* Normalize */
+
+:root {
+    /* Colors */
+    --primario: #fff;
+    --secundario: #94692a;
+    --texto: #333;
+
+    /* Font-sizes*/
+
+    --banner: 6em;
+    --text-title: 4.5em;
+    --text-menu: 2.4em;
+    --text-medium: 2em;
+    --text-small: 1.3em;
+
+}
+
+html {
+    font-size: 62.5%
+}
+
+
+/* HEADER */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primario);
+    border-bottom: 1px solid var(--secundario) ;
+    grid-area: header;
+}
+.menu a {
+    text-decoration: none;
+    color: var(--secundario);
+    font-size: var(--text-menu);
+    border-bottom: 1px solid transparent;
+    transition: border 1s;
+}
+.menu a:hover {
+    border-bottom: 1px solid var(--secundario);
+}
+ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+}
+
+/* Main */
+
+main {
+    grid-area: main;
+}
+
+/* Banner */
+
+.banner {
+    height: 35rem;
+    background-image: url(../multimedia/banner.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position:0 -23rem ;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.banner h1 {
+    font: small-caps italic var(--banner) georgia;
+    color: var(--texto);
+    margin-right: .3em;
+}
+
+/* -------- SECCIÓN NOSOTROS -------- */
+.nosotros {
+    padding: 5rem;
+    background-color: var(--primario);
+    border-top: 1px var(--secundario) solid;
+    border-bottom: 1px var(--secundario) solid;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.nosotros video {
+   max-width: 80%;
+}
+.nosotros__texto {
+    max-width: 50%;
+}
+.nosotros h3 {
+    font: small-caps italic var(--banner) georgia;
+    color: var(--texto);
+    padding: 0px 25px;
+    margin-top: 60px;
+}
+
+.nosotros p {
+    padding: 15px;
+    font-size: var(--text-medium);
+    margin: 25px 0px;
+}
+
+.nosotros a {
+    font-size: var(--text-medium);
+    padding: 1rem;
+    margin: 1.6rem;
+    text-decoration: none;
+    color: var(--primario);
+    background-color: var(--secundario);
+    transition: all .4s;
+}
+.nosotros a:hover {
+    background-color: #6d4d1d;
+}
+
+/* -----SECCIÓN SERVICIOS----- */
+
+.beneficios {
+    background-image: url("../multimedia/joyas2.jpg");
+    background-size: cover;
+    background-position: 0 -35rem;
+    text-align: center;
+    display: grid;
+    grid-template-areas: "ben ben ben ben"
+                         "im1 im2 im3 im4";
+    gap: 3rem;
+
+}
+.beneficios__texto {
+    grid-area: ben;
+}
+.beneficios h5 {
+    margin-top: 3rem;
+    font: small-caps italic 65px georgia;
+    color: var(--texto);
+}
+.beneficios__texto p {
+    font-size: var(--text-medium);
+    color: var(--texto);
+
+}
+
+.beneficios img {
+    width: 60%;
+    padding: 2rem;
+}
+.beneficios__img1, .beneficios__img2, .beneficios__img3, .beneficios__img4 {
+    margin: 3rem;
+    text-align: center;
+    font-size: 1.6rem;
+    background-color: var(--primario);
+    border: 1px solid var(--secundario)
+
+}
+.beneficios__img1 {
+    grid-area: im1;
+}
+.beneficios__img2 {
+    grid-area: im2;
+}
+.beneficios__img3 {
+    grid-area: im3;
+}
+.beneficios__img4 {
+    grid-area: im4;
+}
+
+/* ----------- SECCIÓN FAVORITOS -------- */
+.favoritos {
+    border-top: 1px var(--secundario) solid;
+    border-bottom: 1px var(--secundario) solid;
+    padding: 2rem;
+    background-color: var(--primario);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 175px 2fr 2fr;
+    grid-template-areas:
+        "TITULO TITULO TITULO TITULO TITULO"
+        "VIDEO VIDEO FOTO1 FOTO2 FOTO3"
+        "VIDEO VIDEO FOTO4 FOTO5 FOTO6";
+    gap: .7rem;
+}
+
+.favoritos__texto h5 {
+    grid-area: TITULO;
+    font: small-caps italic 60px georgia;
+    color: var(--texto);
+    margin-top: 30px;
+    text-align: center;
+}
+
+.favoritos__texto {
+    text-align: center;
+    font: small-caps italic 25px georgia;
+    color: #333;
+    grid-area: TITULO;
+}
+
+.favoritos img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.favoritos__img1 {
+    grid-area: FOTO1;
+}
+
+.favoritos__img2 {
+    grid-area: FOTO2;
+}
+
+.favoritos__img3 {
+    grid-area: FOTO3;
+}
+
+.favoritos__img4 {
+    grid-area: FOTO4;
+}
+
+.favoritos__img5 {
+    grid-area: FOTO5;
+}
+
+.favoritos__img6 {
+    grid-area: FOTO6;
+}
+
+/* -------------- SECCIÓN COMPRAR ----------------- */
+.comprar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65rem;
+    background-color: #fffc;
+}
+
+.comprar__texto {
+    width: 75%;
+    color: #333;
+}
+
+.comprar__texto h5 {
+    font: small-caps italic 45px georgia;
+}
+
+.comprar__texto ol {
+    margin: 25px 0;
+}
+
+.comprar__texto li {
+    font: small-caps italic 18px georgia;
+    padding: 5px;
+}
+
+.comprar__texto a {
+    font-size: 2.3rem;
+    padding: 1rem;
+    text-decoration: none;
+    color: white;
+    background-color: #94692A;
+}
+
+
+/*------------ FOOTER ------------ */
+footer {
+    grid-area: footer;
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10rem;
+    background-color: #94692A;
+    box-shadow: 3px -3px 10px 4px #333;
+}
+
+.footer__contacto {
+    width: 50%;
+    text-align: center;
+}
+
+.footer__contacto li {
+    display: inline-block;
+    margin: 0 3rem;
+}
+
+.footer__contacto img {
+    width: 6rem;
+}
+
+/* ------------ FIN DEL FOOTER ------------------- */
+
+/* ------------ FORMULARIO ----------------------- */
+
+
+.cont {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #ffffffdd;
+    max-width: 90%;
+    margin: auto;
+    box-shadow: 0px 3px 10px 4px #333;
+    margin-bottom: 8rem;
+
+}
+
+.cont__texto {
+    max-width: 50%;
+    text-align: center;
+    margin-top: 1.7rem;
+}
+
+.cont__texto h4 {
+    font: small-caps italic 4rem georgia;
+    color: #333;
+}
+
+.cont__texto p {
+    font: small-caps italic 1.6rem georgia;
+    margin: 3rem;
+    color: #333;
+    padding: .4rem;
+}
+
+.cont__form {
+    text-align: center;
+    margin-top: 6rem;
+    color: #333;
+    width: 50%;
+    font: small-caps italic 1.3rem georgia;
+
+    padding-bottom: 3rem;
+
+}
+
+.cont__form h4 {
+    font: small-caps italic 4rem georgia;
+    margin-bottom: 1rem;
+}
+
+.form__input {
+    width: 40%;
+    padding: 1.3rem;
+    margin: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc
+}
+
+.form__btn {
+    font-size: 1.7rem;
+    width: 60%;
+    padding: 1.3rem;
+    margin: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #94692A;
+    color: #fff;
+}
+
+.form__text {
+    font-size: 1.4rem;
+    margin: 1rem;
+    width: 83%;
+    padding: 1.3rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
