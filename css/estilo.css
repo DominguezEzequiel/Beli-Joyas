@@ -86,6 +86,7 @@ main {
 
 /* -------- SECCIÓN NOSOTROS -------- */
 .nosotros {
+    height: 100vh;
     padding: 5rem;
     background-color: var(--primario);
     border-top: 1px var(--secundario) solid;
@@ -94,19 +95,14 @@ main {
     align-items: center;
     justify-content: space-around;
 }
-.nosotros__texto {
+.nosotros__text {
     max-width: 50%;
 }
-.nosotros video {
-   max-width: 100%;
-}
+
 
 .nosotros h3 {
-    font: small-caps italic var(--banner) georgia;
+    font: var(--banner) georgia;
     color: var(--texto);
-    padding: 0px 25px;
-    
-
 }
 
 .nosotros p {
@@ -127,58 +123,6 @@ main {
 .nosotros a:hover {
     background-color: #6d4d1d;
 }
-
-/* -----SECCIÓN SERVICIOS----- */
-
-/* .beneficios {
-    background-image: url("../multimedia/joyas2.jpg");
-    background-size: cover;
-    background-position: 0 -35rem;
-    text-align: center;
-    display: grid;
-    grid-template-areas: "ben ben ben ben"
-                         "im1 im2 im3 im4";
-    gap: 3rem;
-
-}
-.beneficios__texto {
-    grid-area: ben;
-}
-.beneficios h5 {
-    margin-top: 3rem;
-    font: small-caps italic 65px georgia;
-    color: var(--texto);
-}
-.beneficios__texto p {
-    font-size: var(--text-medium);
-    color: var(--texto);
-
-}
-
-.beneficios img {
-    width: 60%;
-    padding: 2rem;
-}
-.beneficios__img1, .beneficios__img2, .beneficios__img3, .beneficios__img4 {
-    margin: 3rem;
-    text-align: center;
-    font-size: 1.6rem;
-    background-color: var(--primario);
-    border: 1px solid var(--secundario)
-
-}
-.beneficios__img1 {
-    grid-area: im1;
-}
-.beneficios__img2 {
-    grid-area: im2;
-}
-.beneficios__img3 {
-    grid-area: im3;
-}
-.beneficios__img4 {
-    grid-area: im4;
-} */
 
 /* ----------- SECCIÓN SHOP -------- */
 
@@ -208,6 +152,10 @@ main {
     color: var(--primario);
     background-color: var(--secundario);
     font-size: var(--text-menu);
+    transition: all 1s;
+}
+.shop a:hover {
+    background-color: #6d4d1d;
 }
 
 /* -------------- SECCIÓN COMPRAR ----------------- */
