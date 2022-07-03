@@ -94,17 +94,19 @@ main {
     align-items: center;
     justify-content: space-around;
 }
-.nosotros video {
-   max-width: 80%;
-}
 .nosotros__texto {
     max-width: 50%;
 }
+.nosotros video {
+   max-width: 100%;
+}
+
 .nosotros h3 {
     font: small-caps italic var(--banner) georgia;
     color: var(--texto);
     padding: 0px 25px;
-    margin-top: 60px;
+    
+
 }
 
 .nosotros p {
@@ -128,7 +130,7 @@ main {
 
 /* -----SECCIÓN SERVICIOS----- */
 
-.beneficios {
+/* .beneficios {
     background-image: url("../multimedia/joyas2.jpg");
     background-size: cover;
     background-position: 0 -35rem;
@@ -176,67 +178,36 @@ main {
 }
 .beneficios__img4 {
     grid-area: im4;
-}
+} */
 
-/* ----------- SECCIÓN FAVORITOS -------- */
-.favoritos {
-    border-top: 1px var(--secundario) solid;
-    border-bottom: 1px var(--secundario) solid;
-    padding: 2rem;
-    background-color: var(--primario);
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 175px 2fr 2fr;
-    grid-template-areas:
-        "TITULO TITULO TITULO TITULO TITULO"
-        "VIDEO VIDEO FOTO1 FOTO2 FOTO3"
-        "VIDEO VIDEO FOTO4 FOTO5 FOTO6";
-    gap: .7rem;
-}
+/* ----------- SECCIÓN SHOP -------- */
 
-.favoritos__texto h5 {
-    grid-area: TITULO;
-    font: small-caps italic 60px georgia;
+.tienda-home {
+    height: 100vh;
+    background-image: url("../multimedia/Joyas-background.png");
+    background-size: cover;
+}
+.shop {
+    padding: 25rem 0 0 8rem;
+    text-align: center;
+    width: 48%;
+}
+.shop h5 {
+    
+    font: small-caps italic 6em georgia;
     color: var(--texto);
-    margin-top: 30px;
-    text-align: center;
 }
-
-.favoritos__texto {
-    text-align: center;
-    font: small-caps italic 25px georgia;
-    color: #333;
-    grid-area: TITULO;
+.shop p {
+    margin-bottom: 2rem;
+    font-size: var(--text-menu);
+    color: var(--texto);
 }
-
-.favoritos img {
-    width: 100%;
-    height: 160px;
-    object-fit: cover;
-}
-
-.favoritos__img1 {
-    grid-area: FOTO1;
-}
-
-.favoritos__img2 {
-    grid-area: FOTO2;
-}
-
-.favoritos__img3 {
-    grid-area: FOTO3;
-}
-
-.favoritos__img4 {
-    grid-area: FOTO4;
-}
-
-.favoritos__img5 {
-    grid-area: FOTO5;
-}
-
-.favoritos__img6 {
-    grid-area: FOTO6;
+.shop a {
+    padding: .2rem;
+    text-decoration: none;
+    color: var(--primario);
+    background-color: var(--secundario);
+    font-size: var(--text-menu);
 }
 
 /* -------------- SECCIÓN COMPRAR ----------------- */
