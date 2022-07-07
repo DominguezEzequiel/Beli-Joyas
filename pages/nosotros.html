@@ -1,57 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nosotros</title>
     <link rel="stylesheet" href="../css/estilo.css">
+    <script src="https://kit.fontawesome.com/5ce1298dc3.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-     <!-- INICIO DEL HEADER -->
-     <header class="header">
-
+    <!-- INICIO DEL HEADER -->
+    <header class="header" id="head">
+        <picture class="nav__logo">
+            <img src="../multimedia/logo_header.png" alt="Logo-Isabella">
+        </picture>
         <nav class="header__nav">
-            <!-- LOGO -->
-            <div class="nav__logo">
-                <img src="../multimedia/logo_header.png" alt="">
-            </div>
-
-            <!-- NAVBAR -->
-            <ul class="nav__menu">
-                <li><a href="../index.html">HOME</a></li>
-                <li><a href="plata.html">PLATA</a></li>
-                <li><a href="oro.html">ORO</a></li>
-                <li><a href="destacados.html">NOSOTROS</a></li>
-                <li><a href="contacto.html">CONTACTANOS</a></li>
+            <ul class="menu">
+                <li class="menu__li"><a href="../index.html">HOME</a></li>
+                <li class="menu__li"><a href="tienda.html">TIENDA</a></li>
+                <li class="menu__li"><a href="preguntas.html">PREGUNTAS FRECUENTES</a></li>
+                <li class="menu__li"><a href="nosotros.html">NOSOTROS</a></li>
+                <li class="menu__li"><a href="contacto.html">CONTACTANOS</a></li>
             </ul>
         </nav>
-
-        <div class="header__titulo">
-            <h1>NOSOTROS</h1>
-            <p>¡Comunícate! Nos esforzamos por estar en comunicación constante con nuestros clientes.</p>
-        </div>
     </header>
-    <!-- FIN DEL HEADER -->
+    <main>
+        <!-- Banner -->
+        <div class="banner">
+            <h1>NOSOTROS</h1>
+        </div>
 
-   <!-- INICIO DEL FOOTER -->
-   <footer>
-    <div class="footer">
-        <div class="footer__logo">
-            <img src="../multimedia/logo_header.png" alt="">
+        <!-- Quienes somos -->
+
+        <section class="sec-nosotros">
+            <div class="sec-nosotros__texto">
+                <div>
+                    <h5> ¿QUIENES SOMOS? </h5>
+                </div>
+                <div>
+                    <P><b> Beli Joyas</b> está en el mercado desde 2016 ofreciendo piezas de plata de alta calidad con
+                        garantía Royal y ahora en expansión con nuevos productos y prestaciones.</P>
+                </div>
+                <div>
+                    <p>Nuestra <b>misión</b> es ayudarte a construir negocios exitosos, concretar tus sueños, para ello
+                        te proporcionamos las herramientas y te asistimos en lo que necesites, para consolidarte como
+                        empresaria.</p>
+                </div>
+                <div>
+                    <p>Nuestro <b>objetivo</b> es trabajar con ahínco para acercarte las mejores productos, junto con
+                        las tendencias del mercado y ofrecerte todo el asesoramiento y apoyo necesario para hacer
+                        realidad tu sueño.
+                    </p>
+                </div>
+                <div class="vt">
+                    <a  href="tienda.html"> VER TIENDA </a> 
+                </div>
+            </div>
+            <div class="sec-nosotros__video">
+                <video src="../multimedia/joyas_video.mp4" autoplay muted></video>
+            </div>
+        </section>
+
+    </main>
+    <!-- INICIO DEL FOOTER -->
+    <footer>
+        <div class="footer__nav">
+            <h6>NAVEGACIÓN</h6>
+            <ul class="footer__ul">
+                <li class="footer__li"> <a href="#head"> HOME </a> </li>
+                <li class="footer__li"> <a href="tienda.html"> TIENDA </a> </li>
+                <li class="footer__li"> <a href="preguntas.html"> PREGUNTAS FRECUENTES </a></li>
+                <li class="footer__li"> <a href="nosotros.html"> NOSOTROS </a></li>
+                <li class="footer__li"> <a href="contacto.html"> CONTACTANOS </a></li>
+            </ul>
+        </div>
+
+        <div class="footer__pagos">
+            <h6 class="pagos__text">MEDIOS DE PAGO</h6>
+            <div class="pagos__grid">
+                <img src="../multimedia/tarjetas/visa.png" alt="">
+                <img src="../multimedia/tarjetas/mastercard.png" alt="">
+                <img src="../multimedia/tarjetas/amex.png" alt="">
+                <img src="../multimedia/tarjetas/mercadopago.png" alt="">
+                <img src="../multimedia/tarjetas/pagofacil.png" alt="">
+                <img src="../multimedia/tarjetas/rapipago.png" alt="">
+                <img src="../multimedia/tarjetas/cabal.png" alt="">
+                <img src="../multimedia/tarjetas/diners.png" alt="">
+            </div>
+            <h6 class="pagos__text">FORMAS DE ENVÍO</h6>
+            <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/shipping/ar/correo-argentino@2x.png"
+                alt="">
         </div>
         <div class="footer__contacto">
+            <h6>CONTACTANOS</h6>
+            <i class="fa-solid fa-phone"> | Whatsapp:+53 11 5555-5555 </i>
+            <i class="fa-solid fa-at"> | BeliJoyas@gmail.com </i>
+            <i class="fa-solid fa-location-dot"> | Av. Rivadavia 12567, CABA, Buenos Aires. </i>
+        </div>
+        <div class="footer__redes">
+            <h6>REDES SOCIALES</h6>
             <ul>
                 <li><a href="https://facebook.com"><img src="../multimedia/icons/facebook.png" alt=""></a></li>
-                <li><a href="https://gmail.com"><img src="../multimedia/icons/gmail.png" alt=""></a></li>
-                <li><a href="#"><img src="../multimedia/icons/whatsapp.png" alt=""></a></li>
                 <li><a href="https://instagram.com"><img src="../multimedia/icons/instagram.png" alt=""></a></li>
             </ul>
         </div>
-    </div>
-    
-</footer>
-<!-- FIN DEL FOOTER -->
-    
+
+    </footer>
+    <!-- FIN DEL FOOTER -->
+
 </body>
+
 </html>

@@ -29,8 +29,10 @@ html {
     font-size: 62.5%
 }
 
-body {
-    background-color: var(--secundario);
+body { 
+    background-image: url(../multimedia/Joyas-background.png);
+    background-attachment: fixed;
+    background-size: cover;
 }
 /* HEADER */
 
@@ -164,7 +166,6 @@ footer {
     grid-template-rows: 50% 50%;
     grid-template-areas: "nav pagos cont"
                          "nav pagos redes";  
-   width: 95vw;
    margin:auto; 
    color: var(--texto);
 }
@@ -224,23 +225,25 @@ footer i {
 
 /* ------------ FIN DEL FOOTER ------------------- */
 
-/* ------------ FORMULARIO ----------------------- */
+/* ---------------PAGINA CONTACTO--------------------- */
 
+/* ------------ FORMULARIO ----------------------- */
 
 .cont {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    background-color: #ffffffdd;
+    background-color: #ffffff;
     max-width: 90%;
     margin: auto;
     box-shadow: 0px 3px 10px 4px #333;
-    margin-bottom: 8rem;
+    margin: 10rem;
+    border: 1px solid var(--secundario);
 
 }
 
 .cont__texto {
-    max-width: 50%;
+    max-width: 100%;
     text-align: center;
     margin-top: 1.7rem;
 }
@@ -278,7 +281,7 @@ footer i {
     padding: 1.3rem;
     margin: 1rem;
     border-radius: 5px;
-    border: 1px solid #ccc
+    border: 1px solid #ccc;
 }
 
 .form__btn {
@@ -288,8 +291,12 @@ footer i {
     margin: 1rem;
     border-radius: 5px;
     border: 1px solid #ccc;
-    background-color: #94692A;
+    background-color: var(--secundario);
     color: #fff;
+    transition: all .3s;
+}
+.form__btn:hover {
+    background-color: #7e5a23;
 }
 
 .form__text {
@@ -299,4 +306,52 @@ footer i {
     padding: 1.3rem;
     border-radius: 5px;
     border: 1px solid #ccc;
+}
+
+/* --------------PAGINA NOSOTROS----------------- */
+
+/* Sección Quienes somos */
+
+.sec-nosotros {
+    background-color: var(--primario);
+    border-top: 1px solid var(--secundario);
+    display: flex;
+    align-items: center;
+    
+}
+.sec-nosotros__texto {
+    height: 60vh;
+    min-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    margin: 9rem 0;
+}
+.sec-nosotros__video {
+    min-width: 50%;
+    border: 2px solid var(--secundario);
+}
+.sec-nosotros video {
+    width: 100%;
+}
+.sec-nosotros h5 {
+    font: 5em georgia;
+    color: var(--texto);
+}
+.sec-nosotros p {
+    font: var(--text-medium) georgia;
+    color: var(--texto);
+    padding: 1.5rem;
+}
+.vt a {
+    background-color: var(--secundario);
+    text-decoration: none;
+    font: var(--text-medium) georgia;
+    color: var(--primario);
+    padding: 1.5rem;
+    transition: all .3s;
+}
+.vt a:hover {
+    background-color: #6d4d1d;
 }
