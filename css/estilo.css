@@ -29,7 +29,9 @@ html {
     font-size: 62.5%
 }
 
-
+body {
+    background-color: var(--secundario);
+}
 /* HEADER */
 
 header {
@@ -58,12 +60,6 @@ ul {
 
 }
 
-/* Main */
-
-main {
-    grid-area: main;
-}
-
 /* Banner */
 
 .banner {
@@ -79,7 +75,7 @@ main {
 }
 
 .banner h1 {
-    font: small-caps italic var(--banner) georgia;
+    font: var(--banner) georgia;
     color: var(--texto);
     margin-right: .3em;
 }
@@ -138,7 +134,7 @@ main {
 }
 .shop h5 {
     
-    font: small-caps italic 6em georgia;
+    font: 6em georgia;
     color: var(--texto);
 }
 .shop p {
@@ -158,67 +154,72 @@ main {
     background-color: #6d4d1d;
 }
 
-/* -------------- SECCIÓN COMPRAR ----------------- */
-.comprar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 65rem;
-    background-color: #fffc;
-}
-
-.comprar__texto {
-    width: 75%;
-    color: #333;
-}
-
-.comprar__texto h5 {
-    font: small-caps italic 45px georgia;
-}
-
-.comprar__texto ol {
-    margin: 25px 0;
-}
-
-.comprar__texto li {
-    font: small-caps italic 18px georgia;
-    padding: 5px;
-}
-
-.comprar__texto a {
-    font-size: 2.3rem;
-    padding: 1rem;
-    text-decoration: none;
-    color: white;
-    background-color: #94692A;
-}
-
 
 /*------------ FOOTER ------------ */
-footer {
-    grid-area: footer;
-}
-.footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 10rem;
+footer { 
+    display: grid;
+    height: 22rem;
     background-color: #94692A;
-    box-shadow: 3px -3px 10px 4px #333;
+    grid-template-columns: repeat(3 1fr);
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "nav pagos cont"
+                         "nav pagos redes";  
+   width: 95vw;
+   margin:auto; 
+   color: var(--texto);
 }
-
-.footer__contacto {
-    width: 50%;
+footer h6 {
+    font: var(--text-small) georgia;
     text-align: center;
+    margin: 1.4rem 0;
+    text-decoration: underline;
+}
+footer a {
+    color: var(--texto);
+    text-decoration: none;
+    font-size: var(--text-small);
+}
+footer i {
+    color: var(--texto);
 }
 
-.footer__contacto li {
-    display: inline-block;
-    margin: 0 3rem;
+.footer__nav {
+    grid-area: nav;    
+}
+.footer__ul{
+    display: flex;
+    flex-direction: column;
 }
 
-.footer__contacto img {
-    width: 6rem;
+.footer__pagos{
+    grid-area: pagos; 
+}
+.pagos__grid {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 5rem 5rem;
+}
+.footer__pagos img {
+    width: 7rem;
+}
+
+.footer__contacto{
+    grid-area: cont;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.footer__redes{
+    grid-area: redes;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer__redes img {
+    width: 25px;
 }
 
 /* ------------ FIN DEL FOOTER ------------------- */

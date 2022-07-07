@@ -6,22 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilo.css">
-    <title>Jewerlys</title>
+    <title>Beli Joyas</title>
+    <script src="https://kit.fontawesome.com/5ce1298dc3.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
 
     <!-- INICIO DEL HEADER -->
-    <header class="header">
+    <header class="header" id="head">
         <picture class="nav__logo">
             <img src="./multimedia/logo_header.png" alt="Logo-Isabella">
         </picture>
         <nav class="header__nav">
             <ul class="menu">
                 <li class="menu__li"><a href="#">HOME</a></li>
-                <li class="menu__li"><a href="./pages/plata.html">PLATA</a></li>
-                <li class="menu__li"><a href="./pages/oro.html">ORO</a></li>
-                <li class="menu__li"><a href="./pages/destacados.html">NOSOTROS</a></li>
+                <li class="menu__li"><a href="./pages/tienda.html">TIENDA</a></li>
+                <li class="menu__li"><a href="./pages/preguntas.html">PREGUNTAS FRECUENTES</a></li>
+                <li class="menu__li"><a href="./pages/nosotros.html">NOSOTROS</a></li>
                 <li class="menu__li"><a href="./pages/contacto.html">CONTACTANOS</a></li>
             </ul>
         </nav>
@@ -30,14 +32,14 @@
     <main>
         <!-- Banner -->
         <div class="banner">
-            <h1>Isabella Joyas</h1>
+            <h1>BELI JOYAS</h1>
         </div>
 
         <!----------- SECCIÓN NOSOTROS -------------->
 
         <section class="nosotros">
             <div class="nosotros__title">
-                <h3> NOSOTROS SOMOS ISABELLA JOYAS</h3>
+                <h3> NOSOTROS SOMOS BELI JOYAS</h3>
                 <p>Elegirnos es elegirte...</p>
             </div>
             <div class="nosotros__text">
@@ -46,7 +48,7 @@
                     cada persona. Así, buscamos potenciar la personalidad, actitud y brillo único de cada uno, aportando
                     productos que los identifiquen. Desde que comienza tu proceso de compra hasta que tu mismo
                     transformas nuestro producto en único, aportando tu personalidad al usarlo.</p>
-                <p> Isabella Joyas no existe por sí solo, lo termina de crear tu actitud.
+                <p> Beli Joyas no existe por sí solo, lo termina de crear tu actitud.
                     Por esto, tenemos una amplia variedad de productos, pero muy poco stock de cada uno. En pocos casos,
                     habrá reingresos o reposiciones, pero no es lo que buscamos.
                     Queremos que cada persona se sienta tan única, como cada uno de nuestros productos. </p>
@@ -67,31 +69,7 @@
             </article>
         </section>
 
-        <!--------- SECCIÓN COMPRAR ------------->
 
-        <section class="comprar">
-            <div class="comprar__texto">
-                <h5>Cómo comprar</h5>
-                <ol>
-                    <li>Elegí el producto que deseas comprar.</li>
-                    <li>Hacé clic en el botón de "Agregar al carrito". Esto agregará el producto a tu carrito y te
-                        llevará al mismo.</li>
-                    <li>Podes seguir agregando otros productos al carrito, o sino hacé clic en "Iniciar Compra".</li>
-                    <li>Completa tus datos de contacto y hacé clic en "Continuar</li>
-                    <li>Ingresa la dirección a donde deseas recibir el producto. Luego haz clic en "Continuar".</li>
-                    <li>Selecciona el método de envío que desees y haz clic en "Continuar".</li>
-                    <li>Elegí el medio de pago.</li>
-                    <li>Finalmente en la página de Confirmación de compra podes revisar toda la información de la
-                        compra. Luego hacé clic en "Continuar".</li>
-                    <li>Ahí serás redirigido a otra pantalla para que completes los datos sobre la forma de pago
-                        elegida. Después de confirmar la compra recibirás un correo de nuestra parte, ese no será un
-                        comprobante de pago.</li>
-                    <li>Una vez acreditado el pago, haremos el envío correspondiente de los productos que hayas
-                        comprado.</li>
-                </ol>
-                <a href="">Ir a la tienda</a>
-            </div>
-        </section>
 
 
     </main>
@@ -100,20 +78,46 @@
 
     <!-- INICIO DEL FOOTER -->
     <footer>
-        <div class="footer">
-            <div class="footer__logo">
-                <img src="./multimedia/logo_header.png" alt="">
-            </div>
-
-            <div class="footer__contacto">
-                <ul>
-                    <li><a href="https://facebook.com"><img src="./multimedia/icons/facebook.png" alt=""></a></li>
-                    <li><a href="https://gmail.com"><img src="./multimedia/icons/gmail.png" alt=""></a></li>
-                    <li><a href="#"><img src="./multimedia/icons/whatsapp.png" alt=""></a></li>
-                    <li><a href="https://instagram.com"><img src="./multimedia/icons/instagram.png" alt=""></a></li>
-                </ul>
-            </div>
+        <div class="footer__nav">
+            <h6>NAVEGACIÓN</h6>
+            <ul class="footer__ul">
+                <li class="footer__li"> <a href="#head"> HOME </a> </li>
+                <li class="footer__li"> <a href="./pages/tienda.html"> TIENDA </a> </li>
+                <li class="footer__li"> <a href="./pages/preguntas.html"> PREGUNTAS FRECUENTES </a></li>
+                <li class="footer__li"> <a href="./pages/nosotros.html"> NOSOTROS </a></li>
+                <li class="footer__li"> <a href="./pages/contacto.html"> CONTACTANOS </a></li>
+            </ul>
         </div>
+
+        <div class="footer__pagos">
+            <h6 class="pagos__text">MEDIOS DE PAGO</h6>
+            <div class="pagos__grid">
+                <img src="./multimedia/tarjetas/visa.png" alt="">
+                <img src="./multimedia/tarjetas/mastercard.png" alt="">
+                <img src="./multimedia/tarjetas/amex.png" alt="">
+                <img src="./multimedia/tarjetas/mercadopago.png" alt="">
+                <img src="./multimedia/tarjetas/pagofacil.png" alt="">
+                <img src="./multimedia/tarjetas/rapipago.png" alt="">
+                <img src="./multimedia/tarjetas/cabal.png" alt="">
+                <img src="./multimedia/tarjetas/diners.png" alt="">
+            </div>
+            <h6 class="pagos__text">FORMAS DE ENVÍO</h6>
+            <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/shipping/ar/correo-argentino@2x.png" alt="">
+        </div>
+        <div class="footer__contacto">
+            <h6>CONTACTANOS</h6>
+            <i class="fa-solid fa-phone"> | Whatsapp:+53 11 5555-5555 </i>
+            <i class="fa-solid fa-at"> | BeliJoyas@gmail.com </i>
+            <i class="fa-solid fa-location-dot"> | Av. Rivadavia 12567, CABA, Buenos Aires. </i>
+        </div>
+        <div class="footer__redes">
+            <h6>REDES SOCIALES</h6>
+            <ul>
+                <li><a href="https://facebook.com"><img src="./multimedia/icons/facebook.png" alt=""></a></li>
+                <li><a href="https://instagram.com"><img src="./multimedia/icons/instagram.png" alt=""></a></li>
+            </ul>
+        </div>
+
     </footer>
     <!-- FIN DEL FOOTER -->
 </body>
