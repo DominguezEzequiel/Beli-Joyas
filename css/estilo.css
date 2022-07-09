@@ -410,6 +410,38 @@ footer i {
     border-bottom: 1px solid var(--secundario);}
 
 
+.qya {
+    background-color: var(--primario);
+    border-top: 1px solid var(--secundario);
+}
+.qya__texto {
+    padding: 3rem;
+}
+.qya__texto h3 {
+    text-align: center;
+    color: var(--texto);
+    font-size: var(--text-title);
+    margin-bottom: 3rem;
+}
+
+.qya__texto h5 {
+    color: var(--texto);
+    font-size: var(--text-small);
+    text-decoration: underline;
+    margin: .5rem 0;
+}
+.qya__texto p {
+    color: var(--texto);
+    font-size: var(--text-small);
+}
+
+.qya__dudas {
+    text-align: center;
+    font-size: var(--text-medium);
+    color: var(--texto);
+    padding: 2rem;
+}
+
  /* RESPONSIVE */
 
 @media screen and (min-width: 480px) AND (max-width: 940px) {
@@ -424,6 +456,12 @@ footer i {
     }
     .header__logo {
         width: 25rem;
+    }
+
+    .tienda__productos {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2rem;
+        padding: 2rem;
     }
     
  
@@ -508,5 +546,14 @@ footer i {
     }
     .sec-nosotros__tel a:hover {
         background-color: var(--hover);
+    }
+
+    .tienda__titulo {
+        padding: 2rem;
+    }
+    .tienda__productos {
+        padding: 2rem;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 2rem
     }
 }
