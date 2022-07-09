@@ -366,6 +366,48 @@ footer i {
 
 }
 
+/* Página Tienda */
+
+.tienda {
+    width: 100%;
+    background-image: url(../multimedia/Joyas-background.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+.tienda__titulo {
+    background-color: var(--primario);
+    border: 1px solid var(--secundario);
+    color: var(--texto);
+    font: var(--text-menu) georgia;
+    text-align: center;
+    padding: .8rem;
+}
+
+.tienda__productos {
+    width: 100%;
+    padding: .5rem;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: .6rem;
+}
+.producto {
+    border: 1px solid var(--secundario);
+    background-color: var(--primario);
+}
+.tienda__productos h3 {
+    font-size: .9em;
+    padding: .3rem;
+}
+.tienda__productos p {
+   color: var(--secundario);
+   font-size: 2em;
+}
+.tienda img {
+    width: 100%;
+    border-bottom: 1px solid var(--secundario);}
 
 
  /* RESPONSIVE */
