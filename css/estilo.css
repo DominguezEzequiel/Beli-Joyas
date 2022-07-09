@@ -38,11 +38,27 @@ body {
 
 header {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
     background-color: var(--primario);
     border-bottom: 1px solid var(--secundario) ;
-    grid-area: header;
+
+}
+.header__nav {
+    border-top: 1px solid var(--secundario);
+    width: 100%;
+    margin: .4rem;
+    padding: .4rem;
+}
+.header__logo {
+    width: 15rem;
+}
+.header__logo img {
+    width: 100%;
+}
+.menu {
+
+    text-align: center;
 }
 .menu a {
     text-decoration: none;
@@ -51,52 +67,42 @@ header {
     border-bottom: 1px solid transparent;
     transition: border 1s;
 }
-.menu a:hover {
-    border-bottom: 1px solid var(--secundario);
-}
+
 ul {
     list-style: none;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 2rem;
-
+    gap: .4rem;
 }
+
+
 
 /* Banner */
 
 .banner {
-    height: 35rem;
+    height: 28vh;
     background-image: url(../multimedia/banner.jpg);
     background-attachment: fixed;
     background-size: cover;
-    background-position:0 -23rem ;
+    background-position: -25rem -10rem ;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
     flex-direction: column;
 }
 
-.banner h1 {
-    font: var(--banner) georgia;
-    color: var(--texto);
-    margin-right: .3em;
-}
-
 /* -------- SECCIÓN NOSOTROS -------- */
 .nosotros {
-    height: 100vh;
-    padding: 5rem;
+    height: 100%;
+    padding: 2rem;
     background-color: var(--primario);
     border-top: 1px var(--secundario) solid;
     border-bottom: 1px var(--secundario) solid;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-.nosotros__text {
-    max-width: 50%;
-}
+    flex-direction: column;
 
+}
 
 .nosotros h3 {
     font: var(--banner) georgia;
@@ -104,22 +110,8 @@ ul {
 }
 
 .nosotros p {
-    padding: 15px;
     font-size: var(--text-medium);
     margin: 25px 0px;
-}
-
-.nosotros a {
-    font-size: var(--text-medium);
-    padding: 1rem;
-    margin: 1.6rem;
-    text-decoration: none;
-    color: var(--primario);
-    background-color: var(--secundario);
-    transition: all .4s;
-}
-.nosotros a:hover {
-    background-color: #6d4d1d;
 }
 
 /* ----------- SECCIÓN SHOP -------- */
@@ -128,14 +120,15 @@ ul {
     height: 100vh;
     background-image: url("../multimedia/Joyas-background.png");
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .shop {
-    padding: 25rem 0 0 8rem;
     text-align: center;
-    width: 48%;
+    width: 50%;
 }
 .shop h5 {
-    
     font: 6em georgia;
     color: var(--texto);
 }
@@ -145,27 +138,25 @@ ul {
     color: var(--texto);
 }
 .shop a {
-    padding: .2rem;
+    padding: .3rem;
     text-decoration: none;
     color: var(--primario);
     background-color: var(--secundario);
     font-size: var(--text-menu);
-    transition: all 1s;
-}
-.shop a:hover {
-    background-color: #6d4d1d;
-}
 
+}
 
 /*------------ FOOTER ------------ */
 footer { 
     display: grid;
-    height: 22rem;
+    height: 100%;
     background-color: #94692A;
-    grid-template-columns: repeat(3 1fr);
-    grid-template-rows: 50% 50%;
-    grid-template-areas: "nav pagos cont"
-                         "nav pagos redes";  
+    grid-template-columns: repeat(2 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: "nav cont"
+                         "nav  redes"
+                         "pagos pagos"
+                         "copy copy";  
    margin:auto; 
    color: var(--texto);
 }
@@ -193,6 +184,7 @@ footer i {
 }
 
 .footer__pagos{
+    text-align: center;
     grid-area: pagos; 
 }
 .pagos__grid {
@@ -210,6 +202,7 @@ footer i {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    gap: .3rem;
 
 }
 .footer__redes{
@@ -219,8 +212,19 @@ footer i {
     justify-content: center;
     align-items: center;
 }
+.footer__redes ul{
+    display: flex;
+    flex-direction: row;
+}
 .footer__redes img {
     width: 25px;
+}
+.copy {
+    text-align: center;
+    grid-area: copy;
+    color: var(--texto);
+    border-top: 1px solid #333;
+    padding: .3rem;
 }
 
 /* ------------ FIN DEL FOOTER ------------------- */
@@ -231,19 +235,20 @@ footer i {
 
 .cont {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     background-color: #ffffff;
-    max-width: 90%;
+    max-width: 100%;
     margin: auto;
     box-shadow: 0px 3px 10px 4px #333;
-    margin: 10rem;
+    margin: 2.5rem;
     border: 1px solid var(--secundario);
 
 }
 
 .cont__texto {
-    max-width: 100%;
+    width: 100%;
     text-align: center;
     margin-top: 1.7rem;
 }
@@ -262,11 +267,10 @@ footer i {
 
 .cont__form {
     text-align: center;
-    margin-top: 6rem;
+    margin-top: 5rem;
     color: #333;
-    width: 50%;
+    width: 100%;
     font: small-caps italic 1.3rem georgia;
-
     padding-bottom: 3rem;
 
 }
@@ -274,10 +278,11 @@ footer i {
 .cont__form h4 {
     font: small-caps italic 4rem georgia;
     margin-bottom: 1rem;
+    columns: var(--texto);
 }
 
 .form__input {
-    width: 40%;
+    width: 80%;
     padding: 1.3rem;
     margin: 1rem;
     border-radius: 5px;
@@ -286,23 +291,20 @@ footer i {
 
 .form__btn {
     font-size: 1.7rem;
-    width: 60%;
+    width: 80%;
     padding: 1.3rem;
     margin: 1rem;
     border-radius: 5px;
     border: 1px solid #ccc;
     background-color: var(--secundario);
     color: #fff;
-    transition: all .3s;
 }
-.form__btn:hover {
-    background-color: #7e5a23;
-}
+
 
 .form__text {
     font-size: 1.4rem;
     margin: 1rem;
-    width: 83%;
+    width: 80%;
     padding: 1.3rem;
     border-radius: 5px;
     border: 1px solid #ccc;
@@ -313,24 +315,26 @@ footer i {
 /* Sección Quienes somos */
 
 .sec-nosotros {
+    height: 100%;
     background-color: var(--primario);
     border-top: 1px solid var(--secundario);
     display: flex;
-    align-items: center;
-    
+    flex-direction: column;
+    align-items: center;   
 }
 .sec-nosotros__texto {
-    height: 60vh;
-    min-width: 50%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     text-align: center;
-    margin: 9rem 0;
+    margin: 8rem 0;
+    padding: 1.3rem;
+    border: 1px solid var(--secundario);
 }
 .sec-nosotros__video {
-    min-width: 50%;
-    border: 2px solid var(--secundario);
+    width: 100%;
+    border: 1px solid var(--secundario);
 }
 .sec-nosotros video {
     width: 100%;
@@ -343,6 +347,7 @@ footer i {
     font: var(--text-medium) georgia;
     color: var(--texto);
     padding: 1.5rem;
+    margin-bottom: 2rem;
 }
 .vt a {
     background-color: var(--secundario);
@@ -350,8 +355,15 @@ footer i {
     font: var(--text-medium) georgia;
     color: var(--primario);
     padding: 1.5rem;
-    transition: all .3s;
 }
-.vt a:hover {
-    background-color: #6d4d1d;
+
+
+
+
+@media screen and (min-width: 480px) AND (max-width: 1240px) {
+    header {
+        flex-direction: row;
+    }
+    
 }
+
