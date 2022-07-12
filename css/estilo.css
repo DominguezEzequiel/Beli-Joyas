@@ -268,7 +268,12 @@ footer i {
     padding: 1.3rem;
     margin: 1rem;
     border-radius: 5px;
-    border: 1px solid #ccc;
+    border: transparent;
+    border-bottom: 1px solid var(--secundario);
+}
+.form__input:focus {
+    background: linear-gradient(0deg, rgba(187,133,53,1) 0%, rgba(255,255,255,1) 42%);
+
 }
 
 .form__btn {
@@ -289,7 +294,12 @@ footer i {
     width: 80%;
     padding: 1.3rem;
     border-radius: 5px;
-    border: 1px solid #ccc;
+    border: transparent;
+    border-bottom: 1px solid var(--secundario);
+}
+.form__text:focus {
+    background: linear-gradient(0deg, rgba(187,133,53,1) 0%, rgba(255,255,255,1) 42%);
+    border: none;
 }
 
 /* --------------PAGINA NOSOTROS----------------- */
@@ -376,7 +386,8 @@ footer i {
     flex-direction: column;
 }
 .tienda__titulo {
-    background-color: var(--primario);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(187,133,53,1) 100%);
+    ;
     border: 1px solid var(--secundario);
     color: var(--texto);
     font: var(--text-menu) georgia;
@@ -396,7 +407,9 @@ footer i {
 .producto {
     border: 1px solid var(--secundario);
     background-color: var(--primario);
+    transition: all .2s;
 }
+
 .tienda__productos h3 {
     font-size: .9em;
     padding: .3rem;
@@ -476,9 +489,39 @@ footer i {
     .header__nav a {
         transition: all .4s;
     }
-    .header__nav a:hover {
-        border-bottom: 2px solid var(--secundario);
-    }
+  
+  
+    /* Underline From Left hover.css*/
+.hvr-underline-from-left {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+  }
+  .hvr-underline-from-left:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    background: var(--hover);
+    height: 2px;
+    -webkit-transition-property: right;
+    transition-property: right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
+    right: 0;
+  }
+
+
     .banner {
         height: 35rem;
         background-attachment: fixed;
@@ -556,4 +599,24 @@ footer i {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 2rem
     }
+    
+    /* BOUNCE-IN Hover.css */
+
+.hvr-bounce-in {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+  }
+  .hvr-bounce-in:hover, .hvr-bounce-in:focus, .hvr-bounce-in:active {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  }
+
+
 }
