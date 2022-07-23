@@ -51,12 +51,7 @@ header {
     margin: .4rem;
     padding: .4rem;
 }
-.header__logo {
-    width: 15rem;
-}
-.header__logo img {
-    width: 100%;
-}
+
 .menu {
 
     text-align: center;
@@ -104,12 +99,13 @@ ul {
 
 }
 
-.nosotros h3 {
+.nosotros h1 {
     font: var(--banner) georgia;
     color: var(--texto);
 }
 
 .nosotros p {
+    color: var(--texto);
     font-size: var(--text-medium);
     margin: 25px 0px;
 }
@@ -128,7 +124,7 @@ ul {
     text-align: center;
     width: 50%;
 }
-.shop h5 {
+.shop h2 {
     font: 6em georgia;
     color: var(--texto);
 }
@@ -160,7 +156,7 @@ footer {
    margin:auto; 
    color: var(--texto);
 }
-footer h6 {
+footer h3 {
     font: var(--text-small) georgia;
     text-align: center;
     margin: 1.4rem 0;
@@ -257,10 +253,15 @@ footer i {
 
 }
 
-.cont__form h4 {
-    font: small-caps italic 4rem georgia;
+.cont__form h1 {
+    font: small-caps italic var(--text-title) georgia;
     margin-bottom: 1rem;
-    columns: var(--texto);
+    color: var(--texto);
+}
+.cont__form p {
+    color: var(--texto);
+    font-size: var(--text-small);
+    margin-bottom: 5rem;
 }
 
 .form__input {
@@ -273,7 +274,7 @@ footer i {
 }
 .form__input:focus {
     background: linear-gradient(0deg, rgba(187,133,53,1) 0%, rgba(255,255,255,1) 42%);
-
+    border: 2px solid red;
 }
 
 .form__btn {
@@ -299,7 +300,7 @@ footer i {
 }
 .form__text:focus {
     background: linear-gradient(0deg, rgba(187,133,53,1) 0%, rgba(255,255,255,1) 42%);
-    border: none;
+
 }
 
 /* --------------PAGINA NOSOTROS----------------- */
@@ -324,14 +325,17 @@ footer i {
     padding: 1.3rem;
     border: 1px solid var(--secundario);
 }
-.sec-nosotros__video {
+.sec-nosotros__mapa {
     width: 100%;
     border: 1px solid var(--secundario);
+}
+.sec-nosotros__mapa iframe{
+    width: 100%;
 }
 .sec-nosotros video {
     width: 100%;
 }
-.sec-nosotros h5 {
+.sec-nosotros h1 {
     font: 5em georgia;
     color: var(--texto);
 }
@@ -355,7 +359,7 @@ footer i {
     margin-top: 1.7rem;
 }
 
-.sec-nosotros__tel h4 {
+.sec-nosotros__tel h2 {
     font: small-caps italic 4rem georgia;
     color: #333;
 }
@@ -386,6 +390,7 @@ footer i {
     flex-direction: column;
 }
 .tienda__titulo {
+    margin-top: 1.6rem;
     background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(187,133,53,1) 100%);
     ;
     border: 1px solid var(--secundario);
@@ -422,30 +427,33 @@ footer i {
     width: 100%;
     border-bottom: 1px solid var(--secundario);}
 
-
+ /* pag. Preguntas frecuentes */
 .qya {
-    background-color: var(--primario);
+    background-color: var(--primario);   
     border-top: 1px solid var(--secundario);
 }
 .qya__texto {
     padding: 3rem;
 }
-.qya__texto h3 {
+.qya__texto h1 {
     text-align: center;
     color: var(--texto);
     font-size: var(--text-title);
     margin-bottom: 3rem;
 }
 
-.qya__texto h5 {
+.qya__texto h2 {
     color: var(--texto);
-    font-size: var(--text-small);
+    font-size: var(--text-menu);
     text-decoration: underline;
-    margin: .5rem 0;
+    margin: 1rem 0;
 }
 .qya__texto p {
     color: var(--texto);
-    font-size: var(--text-small);
+    font-size: var(--text-medium);
+    padding: .3em;
+    
+    
 }
 
 .qya__dudas {
@@ -480,6 +488,10 @@ footer i {
  
 }
 @media screen and (min-width: 941px) {
+    header {
+        flex-direction: row;
+    }
+    
     .header__nav {border-top: none;}
     .header__nav ul {
         flex-direction: row;
@@ -489,7 +501,7 @@ footer i {
     .header__nav a {
         transition: all .4s;
     }
-  
+   
   
     /* Underline From Left hover.css*/
 .hvr-underline-from-left {
@@ -553,17 +565,13 @@ footer i {
                              "copy copy copy";
     }
     
-    .cont {
-        flex-direction: row;
-    }
     .form__input {
         width: 40%;
-        border: none;
         border-bottom: 1px solid var(--secundario);
     }
+    
     .form__text {
         width: 82%;
-        border: none;
         border-bottom: 1px solid var(--secundario);
     }
     .form__btn {
