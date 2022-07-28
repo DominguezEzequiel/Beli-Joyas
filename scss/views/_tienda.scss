@@ -1,0 +1,44 @@
+
+
+.tienda {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-image: url(../../multimedia/Joyas-background.png);
+    background-size: cover;
+    &__titulo {
+        background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(187,133,53,1) 100%);
+        border: 1px solid $primary;
+        color: $text-color;
+        font: small-caps $text-md georgia;
+        padding: $spacing-xs;
+        text-align: center;
+    }
+    &__productos {
+        width: 100%;
+        padding: .8rem;
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 1.3rem;
+        h3 {
+            font-size: $text-xs;
+            padding: .3rem;
+        }
+        p {
+            color: $primary;
+            font-size: $text-sm;
+            border: 1px solid $primary;
+            padding: .5rem;
+        }
+    }
+    .producto {
+        border: 1px solid $primary;
+        background-color: #ffffff;
+        img {
+            width: 100%;
+        }
+        transition: all .3s;
+    }
+}

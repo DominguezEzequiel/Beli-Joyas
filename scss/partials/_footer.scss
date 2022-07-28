@@ -1,0 +1,83 @@
+.footer {
+    display: grid;
+    height: 100%;
+    background-color: $secondary;
+    grid-template-columns: repeat(2 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: "nav cont"
+                         "nav  redes"
+                         "pagos pagos"
+                         "copy copy";  
+   margin: auto; 
+   color: $text-color;
+   border-top: 1px solid $primary;
+   h3{
+    font: $text-sm georgia;
+    color: $text-color;
+    text-align: center;
+    margin: $spacing-sm 0;
+    text-decoration: underline;
+   }
+   a {
+    color: $text-color;
+    font-size: $text-xs;
+   }
+   i {
+    color: $text-color;
+   }
+   &__logo {
+    grid-area: logo;
+    width: 50%;
+    img {
+        width: 100%;
+    }
+   }
+   &__nav {
+    grid-area: nav;
+   }
+   &__ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: .5rem;
+   }
+   &__pagos {
+    text-align: center;
+    grid-area: pagos;
+    .pagos__grid {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: 5rem 5rem;
+        justify-items: center;
+    }
+    img {
+        width: 5rem;
+        border: 1px solid #000000;
+    }
+   }
+   &__contacto {
+    grid-area: cont;
+    @include flex(column, space-around, center);
+    gap: .5rem;
+   }
+   &__redes {
+    grid-area: redes;
+    @include flex(column, center, center);
+    ul {
+        display: flex;
+        flex-direction: row;
+        gap: .6rem;
+    }
+    img {
+        width: 25px;
+    }
+   }
+   .copy {
+    text-align: center;
+    grid-area: copy;
+    color: $text-color;
+    border-top: 1px solid $text-color;
+    padding: .3rem;
+   }
+
+}

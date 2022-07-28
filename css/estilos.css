@@ -1,0 +1,462 @@
+@charset "UTF-8";
+/* Variables */
+/* Colors */
+/* Spacings */
+/* Font-size */
+/* Normalize */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: small-caps georgia; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  background-image: url(../../multimedia/Joyas-background.png);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed; }
+
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: #94692a; }
+
+img {
+  width: 100%; }
+
+/* Mixins */
+/* Header */
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border-bottom: 2px solid #94692a; }
+  .header__nav {
+    text-align: center;
+    width: 100%;
+    margin: .4rem;
+    padding: .4rem;
+    font-size: 2em;
+    border-top: 1px solid #94692a; }
+
+/* Footer */
+.footer {
+  display: grid;
+  height: 100%;
+  background-color: #ffffff;
+  grid-template-columns: repeat(2 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: "nav cont" "nav  redes" "pagos pagos" "copy copy";
+  margin: auto;
+  color: #333;
+  border-top: 1px solid #94692a; }
+  .footer h3 {
+    font: 2em georgia;
+    color: #333;
+    text-align: center;
+    margin: 2rem 0;
+    text-decoration: underline; }
+  .footer a {
+    color: #333;
+    font-size: 1.3em; }
+  .footer i {
+    color: #333; }
+  .footer__logo {
+    grid-area: logo;
+    width: 50%; }
+    .footer__logo img {
+      width: 100%; }
+  .footer__nav {
+    grid-area: nav; }
+  .footer__ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: .5rem; }
+  .footer__pagos {
+    text-align: center;
+    grid-area: pagos; }
+    .footer__pagos .pagos__grid {
+      display: grid;
+      grid-template-columns: 25% 25% 25% 25%;
+      grid-template-rows: 5rem 5rem;
+      justify-items: center; }
+    .footer__pagos img {
+      width: 5rem;
+      border: 1px solid #000000; }
+  .footer__contacto {
+    grid-area: cont;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: .5rem; }
+  .footer__redes {
+    grid-area: redes;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .footer__redes ul {
+      display: flex;
+      flex-direction: row;
+      gap: .6rem; }
+    .footer__redes img {
+      width: 25px; }
+  .footer .copy {
+    text-align: center;
+    grid-area: copy;
+    color: #333;
+    border-top: 1px solid #333;
+    padding: .3rem; }
+
+/* Banner */
+.banner {
+  height: 28vh;
+  background-image: url(../multimedia/banner.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  border-bottom: 1px solid #94692a; }
+
+.banner h2 {
+  padding: 0 1rem;
+  font: small-caps 4.5em georgia;
+  color: #ffffff;
+  text-shadow: 1px 1px 5px #333; }
+
+/* index */
+/* Sección Nosotros */
+.nosotros {
+  height: 100%;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-top: 1px solid #94692a;
+  border-bottom: 1px solid #94692a;
+  display: flex;
+  flex-direction: column; }
+  .nosotros h1 {
+    font: 6em georgia;
+    color: #333; }
+  .nosotros p {
+    color: #333;
+    font-size: 2em;
+    margin: 25px 0px; }
+
+/* Sección SHOP */
+.tienda-home {
+  height: 100vh;
+  background-image: url("../multimedia/Joyas-background.png");
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+.shop {
+  text-align: center;
+  width: 50%; }
+  .shop h2 {
+    font: 6em georgia;
+    color: #333; }
+  .shop p {
+    margin-bottom: 2rem;
+    font-size: 2.4em;
+    color: #333; }
+  .shop a {
+    background-color: #94692a;
+    color: #ffffff;
+    padding: .3rem;
+    font-size: 2.4em; }
+
+/* Contactanos page */
+.cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #ffffff;
+  max-width: 100%;
+  box-shadow: 0px 3px 10px 4px #333;
+  border: 1px solid #94692a;
+  margin: 2rem; }
+  .cont__form {
+    text-align: center;
+    margin-top: 4.7rem;
+    color: #333;
+    width: 100%;
+    padding-bottom: 2.5rem;
+    font-size: 1.3em; }
+    .cont__form h1 {
+      font: small-caps 4.5em georgia;
+      color: #333;
+      margin-bottom: 2rem; }
+    .cont__form p {
+      color: #333;
+      font: small-caps 2em georgia;
+      margin-bottom: 4.7rem; }
+    .cont__form .form__input {
+      width: 80%;
+      padding: 1rem;
+      margin: 1rem;
+      border-radius: 5px;
+      border: transparent;
+      border-bottom: 1px solid #94692a; }
+      .cont__form .form__input:focus {
+        background: linear-gradient(0deg, #bb8535 0%, white 42%); }
+    .cont__form .form__btn {
+      font-size: 2em;
+      width: 80%;
+      padding: 1rem;
+      margin: 1rem;
+      border: 1px solid #ccc;
+      background-color: #94692a;
+      color: #ffffff; }
+    .cont__form .form__text {
+      font-size: 1.3em;
+      margin: 1rem;
+      width: 80%;
+      padding: 1rem;
+      border-radius: 5px;
+      border: transparent;
+      border-bottom: 1px solid #94692a; }
+      .cont__form .form__text:focus {
+        background: linear-gradient(0deg, #bb8535 0%, white 42%); }
+
+/* Nosotros page */
+.secnosotros {
+  height: 100%;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center; }
+  .secnosotros__texto {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin: 5.3rem 0;
+    padding: 1rem;
+    border: 1px solid #94692a; }
+  .secnosotros__mapa {
+    width: 100%;
+    border: 1px solid #94692a; }
+    .secnosotros__mapa iframe {
+      width: 100%; }
+  .secnosotros h1 {
+    font: small-caps 4.5em georgia;
+    color: #333; }
+  .secnosotros p {
+    font: small-caps 2.4em georgia;
+    color: #333;
+    padding: 1rem;
+    margin-bottom: 2rem; }
+  .secnosotros__tel {
+    width: 100%;
+    text-align: center;
+    margin-top: 2rem; }
+    .secnosotros__tel h2 {
+      font: small-caps 2.4em georgia;
+      color: #333; }
+    .secnosotros__tel p {
+      font: small-caps 2em georgia;
+      margin: 2rem;
+      color: #333;
+      padding: .4rem; }
+    .secnosotros__tel a {
+      color: #ffffff;
+      font: small-caps 1.3em georgia;
+      background-color: #94692a;
+      padding: .5rem; }
+  .secnosotros .vt a {
+    background-color: #94692a;
+    font: small-caps 2.4em georgia;
+    color: #ffffff;
+    padding: 1rem; }
+
+/* Tienda page */
+.tienda {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-image: url(../../multimedia/Joyas-background.png);
+  background-size: cover; }
+  .tienda__titulo {
+    background: radial-gradient(circle, white 0%, #bb8535 100%);
+    border: 1px solid #94692a;
+    color: #333;
+    font: small-caps 2.4em georgia;
+    padding: 1rem;
+    text-align: center; }
+  .tienda__productos {
+    width: 100%;
+    padding: .8rem;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 1.3rem; }
+    .tienda__productos h3 {
+      font-size: 1.3em;
+      padding: .3rem; }
+    .tienda__productos p {
+      color: #94692a;
+      font-size: 2em;
+      border: 1px solid #94692a;
+      padding: .5rem; }
+  .tienda .producto {
+    border: 1px solid #94692a;
+    background-color: #ffffff;
+    transition: all .3s; }
+    .tienda .producto img {
+      width: 100%; }
+
+/* Preguntas frecuentes page */
+.qya {
+  background-color: #ffffff; }
+  .qya__texto {
+    padding: 2.5rem; }
+    .qya__texto h1 {
+      text-align: center;
+      color: #333;
+      font-size: 4.5em;
+      margin-bottom: 2.5rem; }
+    .qya__texto h2 {
+      color: #333;
+      font-size: 2.4em;
+      text-decoration: underline;
+      margin: 1rem 0; }
+    .qya__texto p {
+      color: #333;
+      font-size: 2em;
+      padding: .3rem; }
+  .qya__dudas {
+    text-align: center;
+    font-size: 2em;
+    color: #333;
+    padding: 1rem; }
+
+/* Media queries */
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .header {
+    flex-direction: row; }
+    .header__nav {
+      border-top: none; }
+    .header__logo {
+      width: 25rem; } }
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .header__nav {
+    border-top: 1px solid #94692a; }
+    .header__nav ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center; }
+  .banner {
+    height: 35rem;
+    background-attachment: fixed;
+    background-size: cover; }
+  .tienda__productos {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    padding: 2rem; }
+  .footer {
+    grid-template-rows: auto;
+    grid-template-areas: "nav pagos cont" "nav pagos redes" "copy copy copy"; } }
+
+@media screen and (min-width: 993px) {
+  .header__nav {
+    border-top: 1px solid #94692a; }
+    .header__nav ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center; }
+    .header__nav a {
+      transition: all .5s; }
+      .header__nav a:hover {
+        color: #ffffff; }
+    .header__nav li {
+      transition: all .5s; }
+      .header__nav li:hover {
+        padding: .5rem;
+        background-color: #94692a; }
+  .banner {
+    height: 35rem;
+    background-attachment: fixed;
+    background-size: cover; }
+  .shop a {
+    transition: all .3s; }
+    .shop a:hover {
+      background-color: #bb8535; }
+  .nosotros {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-wrap: wrap; }
+    .nosotros__title {
+      width: 50%; }
+    .nosotros__text {
+      width: 50%; }
+  .form__input {
+    width: 40%; }
+  .form__text {
+    width: 82%; }
+  .form__btn {
+    width: 50%;
+    transition: all .4s; }
+    .form__btn:hover {
+      background-color: #bb8535; }
+  .vt a {
+    transition: all .3s; }
+    .vt a:hover {
+      background-color: #bb8535; }
+  .secnosotros a {
+    transition: all .3s; }
+    .secnosotros a:hover {
+      background-color: #bb8535; }
+  .tienda__titulo {
+    padding: 2rem; }
+  .tienda__productos {
+    padding: 2rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2rem; }
+  .hvr-bounce-in {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s; }
+  .hvr-bounce-in:hover, .hvr-bounce-in:focus, .hvr-bounce-in:active {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36); }
+  .footer {
+    grid-template-rows: auto;
+    grid-template-areas: "nav pagos cont" "nav pagos redes" "copy copy copy"; }
+  .footer__li a {
+    transition: all .3s; }
+    .footer__li a:hover {
+      padding: .4rem;
+      background-color: #94692a;
+      color: #ffffff; } }

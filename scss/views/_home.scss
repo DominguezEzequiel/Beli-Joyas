@@ -1,0 +1,53 @@
+
+/* Sección Nosotros */
+
+.nosotros {
+    height: 100%;
+    padding: $spacing-sm;
+    background-color: $secondary;
+    border-top: 1px solid $primary;
+    border-bottom: 1px solid $primary;
+    display: flex;
+    flex-direction: column;
+    
+    h1 {
+    font: $text-xl georgia;
+    color: $text-color;
+    }
+    
+    p {
+    color: $text-color;
+    font-size: $text-sm;
+    margin: 25px 0px;
+    }
+}
+
+/* Sección SHOP */
+
+.tienda-home {
+    height: 100vh;
+    background-image: url("../multimedia/Joyas-background.png");
+    background-size: cover;
+    @include flex(row, center, center)
+}
+
+.shop {
+    text-align: center;
+    width: 50%;
+
+    h2 {
+        font: $text-xl georgia;
+        color: $text-color;
+    }
+    p {
+        margin-bottom: $spacing-sm;
+        font-size: $text-md;
+        color: $text-color;
+    }
+    a {
+        background-color: $primary;
+        color: $secondary;
+        padding: .3rem;
+        font-size: $text-md;        
+    }
+}

@@ -1,0 +1,38 @@
+/* Variables */
+@import './misc/variables';
+
+/* Normalize */
+@import './misc/normalize';
+
+/* Mixins */
+@import './misc/mixins';
+
+/* Header */
+@import './partials/header';
+
+/* Footer */
+@import './partials/footer';
+
+/* Banner */
+@import './partials/banner';
+
+/* index */
+@import './views/home';
+
+/* Contactanos page */
+@import './views/contacto';
+
+/* Nosotros page */
+@import './views/nosotros';
+
+/* Tienda page */
+@import './views/tienda';
+
+/* Preguntas frecuentes page */
+@import './views/preguntasf';
+
+/* Media queries */
+@import './misc/medias';
+
+
+

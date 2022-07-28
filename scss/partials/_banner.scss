@@ -1,0 +1,15 @@
+.banner {
+    height: 28vh;
+    background-image: url(../multimedia/banner.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    @include flex(column, flex-end, flex-end);
+    border-bottom: 1px solid $primary
+    
+}
+.banner h2 {
+        padding: 0 $spacing-xs;
+        font: small-caps $text-lg georgia;
+        color: $secondary;
+        text-shadow: 1px 1px 5px $text-color;
+}

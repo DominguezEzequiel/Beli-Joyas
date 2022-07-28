@@ -1,0 +1,161 @@
+@media screen and (min-width: 576px) AND (max-width: 768px) {
+    .header {
+        flex-direction: row;
+        &__nav {
+            border-top: none;
+        }
+        &__logo {
+            width: 25rem;
+        }
+    }
+}
+
+@media screen and (min-width: 769px) AND (max-width: 992px) {
+    .header {
+        &__nav {
+            border-top: 1px solid $primary;
+            ul {
+                @include flex(row, space-around, center)
+            }
+        }
+    }
+    .banner {
+        height: 35rem;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    .tienda__productos {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: $spacing-sm;
+        padding: $spacing-sm;
+    }    
+    .footer {
+        grid-template-rows: auto;
+        grid-template-areas: "nav pagos cont"
+                             "nav pagos redes"
+                             "copy copy copy";
+    }       
+}
+
+@media screen and (min-width: 993px) {
+    .header__nav {
+        border-top: 1px solid $primary;
+        ul {
+                @include flex(row, space-around, center)
+        }
+        a {
+            transition: all .5s;
+            &:hover {
+                color: $secondary;
+            }
+        }
+        li {
+            transition: all .5s;
+            &:hover {
+                padding: .5rem;
+                background-color: $primary;
+
+            }
+        }
+    }
+
+    .banner {
+        height: 35rem;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    .shop {
+        a {
+            transition: all .3s;
+            &:hover {
+                background-color: $hover;
+            }
+        }
+    }
+
+    .nosotros {
+        @include flex(row, center, center);
+        height: 100vh;
+        flex-wrap: wrap;
+        &__title {
+            width: 50%;
+        }
+        &__text {
+            width: 50%;
+        }
+    }
+    .form__input {
+        width: 40%;
+    }
+    .form__text {
+        width: 82%;
+    }
+    .form__btn {
+        width: 50%;
+        transition: all .4s;
+        &:hover {
+            background-color: $hover;
+        }
+    }
+    .vt {
+        a {
+            transition: all .3s;
+            &:hover {
+                background-color: $hover;
+            }
+        }
+    }
+    .secnosotros {
+        a {
+            transition: all .3s;
+            &:hover {
+                background-color: $hover;
+            }
+        }
+    }
+    .tienda {
+        &__titulo {
+            padding: $spacing-sm;
+        }
+        &__productos {
+            padding: $spacing-sm;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: $spacing-sm;
+        }
+    }
+
+    .hvr-bounce-in {
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        -webkit-transition-duration: 0.5s;
+        transition-duration: 0.5s;
+      }
+      .hvr-bounce-in:hover, .hvr-bounce-in:focus, .hvr-bounce-in:active {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+        -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+        transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+      }
+    
+    
+
+    .footer {
+        grid-template-rows: auto;
+        grid-template-areas: "nav pagos cont"
+                             "nav pagos redes"
+                             "copy copy copy";
+    }
+    .footer__li {
+        a {      
+            transition: all .3s;  
+            &:hover {
+                padding: .4rem;
+                background-color: $primary;
+                color: $secondary;
+            }
+        }
+    }
+}

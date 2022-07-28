@@ -1,0 +1,13 @@
+.header {
+    @include flex(column, center, center);
+    background-color: $secondary;
+    border-bottom: 2px solid $primary;
+    &__nav {
+        text-align: center;
+        width: 100%;
+        margin: .4rem;
+        padding: .4rem;
+        font-size: $text-sm; 
+        border-top: 1px solid $primary
+    }
+}

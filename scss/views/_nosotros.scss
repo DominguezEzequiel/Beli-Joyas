@@ -1,0 +1,58 @@
+.secnosotros {
+    height: 100%;
+    background-color: $secondary;
+    @include flex(column, flex-start, center);
+    &__texto {
+        width: 80%;
+        @include flex(column, space-around, center);
+        text-align: center;
+        margin: $spacing-xl 0;
+        padding: $spacing-xs;
+        border: 1px solid $primary;
+    }
+    &__mapa {
+        width: 100%;
+        border: 1px solid $primary;
+        iframe {
+            width: 100%;
+        }
+    }
+    h1 {
+        font: small-caps $text-lg georgia;
+        color: $text-color;
+    }
+    p {
+        font: small-caps $text-md georgia;
+        color: $text-color;
+        padding: $spacing-xs;
+        margin-bottom: $spacing-sm;
+    }
+
+    &__tel {
+        width: 100%;
+        text-align: center;
+        margin-top: $spacing-sm;
+        h2 {
+            font: small-caps $text-md georgia;
+            color: $text-color;
+        }
+        p {
+            font: small-caps $text-sm georgia;
+            margin: $spacing-sm;
+            color: $text-color;
+            padding: .4rem;
+        }
+        a {
+            color: $secondary;
+            font: small-caps $text-xs georgia;
+            background-color: $primary;
+            padding: .5rem;
+        }
+    }
+    .vt a {
+        background-color: $primary;
+        font: small-caps $text-md georgia;
+        color: $secondary;
+        padding: $spacing-xs;
+    }
+}

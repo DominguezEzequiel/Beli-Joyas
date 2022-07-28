@@ -1,0 +1,29 @@
+.qya {
+    background-color: $secondary;
+    &__texto {
+        padding: $spacing-md;
+        h1 {
+            text-align: center;
+            color: $text-color;
+            font-size: $text-lg;
+            margin-bottom: $spacing-md;
+        }
+        h2 {
+            color: $text-color;
+            font-size: $text-md;
+            text-decoration: underline;
+            margin: $spacing-xs 0;
+        }
+        p {
+            color: $text-color;
+            font-size: $text-sm;
+            padding: .3rem;
+        }
+    }
+    &__dudas {
+        text-align: center;
+        font-size: $text-sm;
+        color: $text-color;
+        padding: $spacing-xs;
+    }
+}
