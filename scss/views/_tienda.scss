@@ -1,44 +1,68 @@
-
-
 .tienda {
+
     width: 100%;
     display: flex;
     flex-direction: column;
-    background-image: url(../../multimedia/Joyas-background.png);
-    background-size: cover;
+    background-color: #ffffff;
     &__titulo {
-        background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(187,133,53,1) 100%);
-        border: 1px solid $primary;
+        background: linear-gradient(180deg, rgba(187, 133, 53, 1) 0%, rgba(254, 254, 254, 1) 100%);
         color: $text-color;
         font: small-caps $text-md georgia;
         padding: $spacing-xs;
         text-align: center;
+        margin-bottom: $spacing-xs;
+
     }
+
     &__productos {
-        width: 100%;
-        padding: .8rem;
+        width: 90%;
+        margin: auto;
         text-align: center;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
         gap: 1.3rem;
-        h3 {
-            font-size: $text-xs;
-            padding: .3rem;
-        }
-        p {
-            color: $primary;
-            font-size: $text-sm;
-            border: 1px solid $primary;
-            padding: .5rem;
-        }
+
     }
+
     .producto {
-        border: 1px solid $primary;
-        background-color: #ffffff;
-        img {
-            width: 100%;
-        }
+        @include flex(column, space-evenly, center);
+        background-color: $secondary;
+        border: 1px solid $hover;
+        border-radius: 15px;
+        width: 100%;
+        height: 37rem;
         transition: all .3s;
+        flex-wrap: wrap;
+
+        img {
+            transition: all .3s;
+            width: 90%;
+        }
+
+        &__texto {
+            @include flex(column, space-around, center);
+            h3 {
+                font-size: $text-xs;
+                padding: .3rem;
+            }
+
+            p {
+                color: $text-color;
+                font-size: $text-sm;
+                padding: .5rem;
+            }
+
+            a {
+                transition: all .3s;
+                font-size: $text-xs;
+                border: 1px solid $primary;
+                border-radius: 15px;
+                padding: .8rem;
+            }
+        }
+
+        
+
     }
 }

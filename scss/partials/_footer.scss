@@ -79,5 +79,9 @@
     border-top: 1px solid $text-color;
     padding: .3rem;
    }
-
+   .link-active {
+    background-color: $primary;
+    color: $secondary;
+    padding: .1rem;
+}
 }
