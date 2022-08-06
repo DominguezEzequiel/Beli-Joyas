@@ -14,12 +14,20 @@
 @media screen and (min-width: 769px) AND (max-width: 992px) {
     .header {
         &__nav {
-            border-top: 1px solid $primary;
+            border-top: none;
             ul {
                 @include flex(row, space-around, center)
             }
         }
+        .link-active {
+            background-color: $primary;
+            color: $secondary;
+            padding: .8rem;
+            border-radius: 15px;
+        }
+    
     }
+
     .banner {
         height: 35rem;
         background-attachment: fixed;
@@ -49,9 +57,16 @@
             transition: all .3s;
             &:hover {
                 color: $hover;
-                border-bottom:1px solid $hover;
+                text-shadow: 1px 1px 3px $hover;
             }
         }
+        .link-active {
+            background-color: $primary;
+            color: $secondary;
+            padding: .8rem;
+            border-radius: 15px;
+        }
+    
     }
 
     .banner {
@@ -148,3 +163,4 @@
         }
     }
 }
+
