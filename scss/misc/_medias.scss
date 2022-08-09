@@ -70,7 +70,7 @@
     }
 
     .banner {
-        height: 35rem;
+        height: 60vh;
         background-attachment: fixed;
         background-size: cover;
     }
@@ -145,6 +145,27 @@
         }
     }
    
+    .qya {
+        text-align: start;
+        h1 {
+            text-align: center;
+            color: $text-color;
+            font-size: $text-lg;
+            margin-bottom: $spacing-md;
+            padding-top: $spacing-md;
+        }
+        &__texto {
+            width: 85%;
+            margin: auto;
+            border-radius: 20px;
+            h2 {
+                text-align: center;
+            }
+            p {
+                padding-left: $spacing-xl;
+            }
+        }
+    }
 
     .footer {
         grid-template-rows: auto;

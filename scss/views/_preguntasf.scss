@@ -1,24 +1,35 @@
 .qya {
+    text-align: center;
     background-color: $secondary;
-    &__texto {
-        padding: $spacing-md;
+    &__titulo {
+        background: linear-gradient(180deg, rgba(187,133,53,1) 0%, rgba(254,254,254,1) 63%);
         h1 {
             text-align: center;
             color: $text-color;
             font-size: $text-lg;
             margin-bottom: $spacing-md;
+            padding-top: $spacing-md;
         }
+    }
+    &__texto {
+        border: 1px solid $hover;
+        padding: $spacing-md;
         h2 {
-            color: $text-color;
+            background-color: $hover;
+            padding: $spacing-xs;
+            border-radius: 16px;
+            border: 1px solid $hover;
+            color: $secondary;
             font-size: $text-md;
-            text-decoration: underline;
-            margin: $spacing-xs 0;
+            margin: $spacing-sm 0;
+
         }
         p {
             color: $text-color;
             font-size: $text-sm;
-            padding: .3rem;
+            padding: $spacing-xs;
         }
+       
     }
     &__dudas {
         text-align: center;
