@@ -73,6 +73,7 @@
     }
    }
    .copy {
+    font-size: $text-xs;
     text-align: center;
     grid-area: copy;
     color: $text-color;
@@ -80,7 +81,7 @@
     padding: .3rem;
    }
    .link-active {
-    background-color: $primary;
+    background-color: $hover;
     color: $secondary;
     padding: .1rem;
 }

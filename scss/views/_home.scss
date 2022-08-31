@@ -20,6 +20,10 @@
     font-size: $text-sm;
     margin: 25px 0px;
     }
+
+    span {
+        background-color: $primary;
+    }
 }
 
 /* Sección SHOP */
@@ -46,7 +50,7 @@
     }
     a {
         background-color: $primary;
-        color: $secondary;
+        color: $text-color;
         padding: .3rem;
         font-size: $text-md;        
     }

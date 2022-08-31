@@ -5,8 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Conocé toda nuestra joyería. Accesorios de plata y oro. Para vos que amas regalar y regalarte algo especial y original, que te conecte y distinga. Envíos a todo el país. Pago en cuotas disponible.">
+    <meta name="description"
+        content="Conocé toda nuestra joyería. Accesorios de plata y oro. Para vos que amas regalar y regalarte algo especial y original, que te conecte y distinga. Envíos a todo el país. Pago en cuotas disponible.">
     <meta name="keywords" content="Tienda, Joyas, Plata, Oro, Puslera, Anillo, Pendientes">
+    <!-- ANIMATE CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="css/estilos.css">
     <title>Beli Joyas - HOME</title>
     <script src="https://kit.fontawesome.com/5ce1298dc3.js" crossorigin="anonymous"></script>
@@ -30,27 +33,28 @@
                     <a href="./pages/tienda.html">TIENDA</a>
                 </li>
                 <li class="menu__li ">
-                    <a href="./pages/preguntas.html">PREGUNTAS FRECUENTES</a>
-                </li>
-                <li class="menu__li ">
                     <a href="./pages/nosotros.html">NOSOTROS</a>
-                </li>
-                <li class="menu__li ">
-                    <a href="./pages/contacto.html">CONTACTANOS</a>
                 </li>
             </ul>
         </nav>
+        
     </header>
 
     <main>
+        <!-- LOGO WSP -->
+        <a class="wsp" href="#">
+            <img src="multimedia/icons/whatsapp.png" alt="Logo whatsapp">
+        </a>
         <!-- Banner -->
         <div class="banner">
-            <h2>BELI JOYAS<h2>
+            <h2 class="animate__animated animate__fadeInUp">BELI JOYAS</h2>
+            <p class="animate__animated animate__fadeInUp">Bienvenidos</p>
+            <a href="#nosotros"><i class="fa-solid fa-chevron-down"></i></a>
         </div>
 
         <!----------- SECCIÓN NOSOTROS -------------->
 
-        <section class="nosotros">
+        <section class="nosotros" id="nosotros">
             <div class="nosotros__title">
                 <h1> NOSOTROS SOMOS BELI JOYAS</h1>
                 <p>Elegirnos es elegirte...</p>
@@ -58,13 +62,15 @@
             <div class="nosotros__text">
                 <p>
                     Nuestro principal objetivo es brindar productos auténticos que no sean más que el complemento de
-                    cada persona. Así, buscamos potenciar la personalidad, actitud y brillo único de cada uno, aportando
+                    cada persona. Así, buscamos potenciar la <span>personalidad, actitud y brillo único de cada
+                        uno</span>, aportando
                     productos que los identifiquen. Desde que comienza tu proceso de compra hasta que tu mismo
                     transformas nuestro producto en único, aportando tu personalidad al usarlo.</p>
                 <p> Beli Joyas no existe por sí solo, lo termina de crear tu actitud.
                     Por esto, tenemos una amplia variedad de productos, pero muy poco stock de cada uno. En pocos casos,
                     habrá reingresos o reposiciones, pero no es lo que buscamos.
-                    Queremos que cada persona se sienta tan única, como cada uno de nuestros productos. </p>
+                    <span>Queremos que cada persona se sienta tan única, como cada uno de nuestros productos.</span>
+                </p>
                 <p> Y si sientes que es para ti, lo será. </p>
 
             </div>
@@ -96,24 +102,24 @@
             <ul class="footer__ul">
                 <li class="footer__li"> <a class="link-active" href="#head"> HOME </a> </li>
                 <li class="footer__li"> <a href="./pages/tienda.html"> TIENDA </a> </li>
-                <li class="footer__li"> <a href="./pages/preguntas.html"> PREGUNTAS FRECUENTES </a></li>
                 <li class="footer__li"> <a href="./pages/nosotros.html"> NOSOTROS </a></li>
                 <li class="footer__li"> <a href="./pages/contacto.html"> CONTACTANOS </a></li>
             </ul>
         </div>
 
         <div class="footer__pagos">
-            <h6 class="pagos__text"><h3>MEDIOS DE PAGO</h3>
-            <div class="pagos__grid">
-                <img src="./multimedia/tarjetas/visa.png" alt="">
-                <img src="./multimedia/tarjetas/mastercard.png" alt="">
-                <img src="./multimedia/tarjetas/amex.png" alt="">
-                <img src="./multimedia/tarjetas/mercadopago.png" alt="">
-                <img src="./multimedia/tarjetas/pagofacil.png" alt="">
-                <img src="./multimedia/tarjetas/rapipago.png" alt="">
-                <img src="./multimedia/tarjetas/cabal.png" alt="">
-                <img src="./multimedia/tarjetas/diners.png" alt="">
-            </div>
+            <h6 class="pagos__text">
+                <h3>MEDIOS DE PAGO</h3>
+                <div class="pagos__grid">
+                    <img src="./multimedia/tarjetas/visa.png" alt="">
+                    <img src="./multimedia/tarjetas/mastercard.png" alt="">
+                    <img src="./multimedia/tarjetas/amex.png" alt="">
+                    <img src="./multimedia/tarjetas/mercadopago.png" alt="">
+                    <img src="./multimedia/tarjetas/pagofacil.png" alt="">
+                    <img src="./multimedia/tarjetas/rapipago.png" alt="">
+                    <img src="./multimedia/tarjetas/cabal.png" alt="">
+                    <img src="./multimedia/tarjetas/diners.png" alt="">
+                </div>
         </div>
         <div class="footer__contacto">
             <h3>CONTACTANOS</h3>

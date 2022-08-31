@@ -1,15 +1,29 @@
 .banner {
-    height: 28vh;
+    height: 83vh;
     background-image: url(../multimedia/banner.jpg);
     background-attachment: fixed;
     background-size: cover;
-    @include flex(column, flex-end, flex-end);
-    border-bottom: 1px solid $primary
-    
-}
-.banner h2 {
+    background-position: center;
+    @include flex(column, center, center);
+    border-bottom: 1px solid $primary;
+
+    h2 {
         padding: 0 $spacing-xs;
         font: small-caps $text-lg georgia;
         color: $secondary;
-        text-shadow: 1px 1px 5px $text-color;
+        text-shadow: 5px 5px 10px $text-color;
+    }
+
+    p {
+        font: small-caps $text-md georgia;
+        color: $secondary;
+        text-shadow: 5px 5px 10px $text-color;
+    }
+
+    i {
+        color: $secondary;
+        text-shadow: 5px 5px 10px $text-color;
+        font-size: $text-lg;
+        margin-top: $spacing-md;
+    }
 }

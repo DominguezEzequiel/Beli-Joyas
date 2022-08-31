@@ -1,19 +1,36 @@
 .header {
+    max-width: 100%;
     @include flex(column, center, center);
     background-color: $secondary;
     border-bottom: 1px solid $primary;
+    position: sticky;
+    top: -80px;
+
     &__nav {
-        text-align: center;
         width: 100%;
-        margin: .4rem;
-        padding: .4rem;
-        font-size: $text-sm; 
-        border-top: 1px solid $primary;
+
+        ul {
+            @include flex(row, space-around, center);
+            ;
+            font-size: 2em;
+            padding: 2rem;
+            background-color: $primary;
+
+            a {
+                color: $text-color
+            }
+        }
+
     }
-    
+    .wsp {
+        background-color: transparent;
+       
+        bottom: 30px;
+    }
+
     .link-active {
-        background-color: $primary;
-        color: $secondary;
+
+        color: $hover;
         padding: .3rem;
         border-radius: 15px;
     }

@@ -11,7 +11,8 @@
   font-family: small-caps georgia; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
 
 body {
   background-image: url(../../multimedia/Joyas-background.png);
@@ -24,7 +25,7 @@ ul {
 
 a {
   text-decoration: none;
-  color: #94692a; }
+  color: #ffddcc; }
 
 img {
   width: 100%; }
@@ -32,22 +33,32 @@ img {
 /* Mixins */
 /* Header */
 .header {
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #ffffff;
-  border-bottom: 1px solid #94692a; }
+  background-color: #ffeeeeee;
+  border-bottom: 1px solid #ffddcc;
+  position: sticky;
+  top: -80px; }
   .header__nav {
-    text-align: center;
-    width: 100%;
-    margin: .4rem;
-    padding: .4rem;
-    font-size: 2em;
-    border-top: 1px solid #94692a; }
+    width: 100%; }
+    .header__nav ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      font-size: 2em;
+      padding: 2rem;
+      background-color: #ffddcc; }
+      .header__nav ul a {
+        color: #331122; }
+  .header .wsp {
+    background-color: transparent;
+    bottom: 30px; }
   .header .link-active {
-    background-color: #94692a;
-    color: #ffffff;
+    color: #DD8755;
     padding: .3rem;
     border-radius: 15px; }
 
@@ -55,24 +66,24 @@ img {
 .footer {
   display: grid;
   height: 100%;
-  background-color: #ffffff;
+  background-color: #ffeeeeee;
   grid-template-columns: repeat(2 1fr);
   grid-template-rows: auto;
   grid-template-areas: "nav cont" "nav  redes" "pagos pagos" "copy copy";
   margin: auto;
-  color: #333;
-  border-top: 1px solid #94692a; }
+  color: #331122;
+  border-top: 1px solid #ffddcc; }
   .footer h3 {
     font: 2em georgia;
-    color: #333;
+    color: #331122;
     text-align: center;
     margin: 2rem 0;
     text-decoration: underline; }
   .footer a {
-    color: #333;
+    color: #331122;
     font-size: 1.3em; }
   .footer i {
-    color: #333; }
+    color: #331122; }
   .footer__logo {
     grid-area: logo;
     width: 50%; }
@@ -116,51 +127,63 @@ img {
     .footer__redes img {
       width: 25px; }
   .footer .copy {
+    font-size: 1.3em;
     text-align: center;
     grid-area: copy;
-    color: #333;
-    border-top: 1px solid #333;
+    color: #331122;
+    border-top: 1px solid #331122;
     padding: .3rem; }
   .footer .link-active {
-    background-color: #94692a;
-    color: #ffffff;
+    background-color: #DD8755;
+    color: #ffeeeeee;
     padding: .1rem; }
 
 /* Banner */
 .banner {
-  height: 28vh;
+  height: 83vh;
   background-image: url(../multimedia/banner.jpg);
   background-attachment: fixed;
   background-size: cover;
+  background-position: center;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-end;
-  border-bottom: 1px solid #94692a; }
-
-.banner h2 {
-  padding: 0 1rem;
-  font: small-caps 4.5em georgia;
-  color: #ffffff;
-  text-shadow: 1px 1px 5px #333; }
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #ffddcc; }
+  .banner h2 {
+    padding: 0 1rem;
+    font: small-caps 4.5em georgia;
+    color: #ffeeeeee;
+    text-shadow: 5px 5px 10px #331122; }
+  .banner p {
+    font: small-caps 2.4em georgia;
+    color: #ffeeeeee;
+    text-shadow: 5px 5px 10px #331122; }
+  .banner i {
+    color: #ffeeeeee;
+    text-shadow: 5px 5px 10px #331122;
+    font-size: 4.5em;
+    margin-top: 2.5rem; }
 
 /* index */
 /* Sección Nosotros */
 .nosotros {
   height: 100%;
   padding: 2rem;
-  background-color: #ffffff;
-  border-top: 1px solid #94692a;
-  border-bottom: 1px solid #94692a;
+  background-color: #ffeeeeee;
+  border-top: 1px solid #ffddcc;
+  border-bottom: 1px solid #ffddcc;
   display: flex;
   flex-direction: column; }
   .nosotros h1 {
     font: 6em georgia;
-    color: #333; }
+    color: #331122; }
   .nosotros p {
-    color: #333;
+    color: #331122;
     font-size: 2em;
     margin: 25px 0px; }
+  .nosotros span {
+    background-color: #ffddcc; }
 
 /* Sección SHOP */
 .tienda-home {
@@ -177,14 +200,14 @@ img {
   width: 50%; }
   .shop h2 {
     font: 6em georgia;
-    color: #333; }
+    color: #331122; }
   .shop p {
     margin-bottom: 2rem;
     font-size: 2.4em;
-    color: #333; }
+    color: #331122; }
   .shop a {
-    background-color: #94692a;
-    color: #ffffff;
+    background-color: #ffddcc;
+    color: #331122;
     padding: .3rem;
     font-size: 2.4em; }
 
@@ -195,33 +218,34 @@ img {
   justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
-  background-color: #ffffff;
+  background-color: #ffeeeeee;
   max-width: 100%;
   box-shadow: 0px 3px 10px 4px #333;
-  border: 1px solid #94692a;
+  border: 1px solid #ffddcc;
   margin: 2rem; }
   .cont__form {
     text-align: center;
     margin-top: 4.7rem;
-    color: #333;
+    color: #331122;
     width: 100%;
     padding-bottom: 2.5rem;
     font-size: 1.3em; }
     .cont__form h1 {
       font: small-caps 4.5em georgia;
-      color: #333;
+      color: #331122;
       margin-bottom: 2rem; }
     .cont__form p {
-      color: #333;
+      color: #331122;
       font: small-caps 2em georgia;
       margin-bottom: 4.7rem; }
     .cont__form .form__input {
+      outline: none;
       width: 80%;
       padding: 1rem;
       margin: 1rem;
       border-radius: 5px;
       border: transparent;
-      border-bottom: 1px solid #94692a; }
+      border-bottom: 1px solid #ffddcc; }
       .cont__form .form__input:focus {
         background: linear-gradient(0deg, #bb8535 0%, white 42%); }
     .cont__form .form__btn {
@@ -230,8 +254,8 @@ img {
       padding: 1rem;
       margin: 1rem;
       border: 1px solid #ccc;
-      background-color: #94692a;
-      color: #ffffff; }
+      background-color: #ffddcc;
+      color: #ffeeeeee; }
     .cont__form .form__text {
       font-size: 1.3em;
       margin: 1rem;
@@ -239,14 +263,14 @@ img {
       padding: 1rem;
       border-radius: 5px;
       border: transparent;
-      border-bottom: 1px solid #94692a; }
+      border-bottom: 1px solid #ffddcc; }
       .cont__form .form__text:focus {
         background: linear-gradient(0deg, #bb8535 0%, white 42%); }
 
 /* Nosotros page */
 .secnosotros {
   height: 100%;
-  background-color: #ffffff;
+  background-color: #ffeeeeee;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -260,18 +284,18 @@ img {
     text-align: center;
     margin: 5.3rem 0;
     padding: 1rem;
-    border: 1px solid #94692a; }
+    border: 1px solid #ffddcc; }
   .secnosotros__mapa {
     width: 100%;
-    border: 1px solid #94692a; }
+    border: 1px solid #ffddcc; }
     .secnosotros__mapa iframe {
       width: 100%; }
   .secnosotros h1 {
     font: small-caps 4.5em georgia;
-    color: #333; }
+    color: #331122; }
   .secnosotros p {
     font: small-caps 2.4em georgia;
-    color: #333;
+    color: #331122;
     padding: 1rem;
     margin-bottom: 2rem; }
   .secnosotros__tel {
@@ -280,21 +304,21 @@ img {
     margin-top: 2rem; }
     .secnosotros__tel h2 {
       font: small-caps 2.4em georgia;
-      color: #333; }
+      color: #331122; }
     .secnosotros__tel p {
       font: small-caps 2em georgia;
       margin: 2rem;
-      color: #333;
+      color: #331122;
       padding: .4rem; }
     .secnosotros__tel a {
-      color: #ffffff;
+      color: #ffeeeeee;
       font: small-caps 1.3em georgia;
-      background-color: #94692a;
+      background-color: #ffddcc;
       padding: .5rem; }
   .secnosotros .vt a {
-    background-color: #94692a;
+    background-color: #ffddcc;
     font: small-caps 2.4em georgia;
-    color: #ffffff;
+    color: #ffeeeeee;
     padding: 1rem; }
 
 /* Tienda page */
@@ -305,7 +329,7 @@ img {
   background-color: #ffffff; }
   .tienda__titulo {
     background: linear-gradient(180deg, #bb8535 0%, #fefefe 100%);
-    color: #333;
+    color: #331122;
     font: small-caps 2.4em georgia;
     padding: 1rem;
     text-align: center;
@@ -323,8 +347,8 @@ img {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    background-color: #ffffff;
-    border: 1px solid #bb8535;
+    background-color: #ffeeeeee;
+    border: 1px solid #DD8755;
     border-radius: 15px;
     width: 100%;
     height: 37rem;
@@ -342,48 +366,59 @@ img {
         font-size: 1.3em;
         padding: .3rem; }
       .tienda .producto__texto p {
-        color: #333;
+        color: #331122;
         font-size: 2em;
         padding: .5rem; }
       .tienda .producto__texto a {
         transition: all .3s;
         font-size: 1.3em;
-        border: 1px solid #94692a;
+        border: 1px solid #ffddcc;
         border-radius: 15px;
         padding: .8rem; }
 
 /* Preguntas frecuentes page */
 .qya {
   text-align: center;
-  background-color: #ffffff; }
+  background-color: #ffeeeeee; }
   .qya__titulo {
     background: linear-gradient(180deg, #bb8535 0%, #fefefe 63%); }
     .qya__titulo h1 {
       text-align: center;
-      color: #333;
+      color: #331122;
       font-size: 4.5em;
       margin-bottom: 2.5rem;
       padding-top: 2.5rem; }
   .qya__texto {
-    border: 1px solid #bb8535;
+    border: 1px solid #DD8755;
     padding: 2.5rem; }
     .qya__texto h2 {
-      background-color: #bb8535;
+      background-color: #DD8755;
       padding: 1rem;
       border-radius: 16px;
-      border: 1px solid #bb8535;
-      color: #ffffff;
+      border: 1px solid #DD8755;
+      color: #ffeeeeee;
       font-size: 2.4em;
       margin: 2rem 0; }
     .qya__texto p {
-      color: #333;
+      color: #331122;
       font-size: 2em;
       padding: 1rem; }
   .qya__dudas {
     text-align: center;
     font-size: 2em;
-    color: #333;
+    color: #331122;
     padding: 1rem; }
+
+/* Logo wsp */
+.wsp {
+  position: fixed;
+  bottom: 30px;
+  right: 30px; }
+  .wsp img {
+    width: 75px;
+    box-shadow: 3px 3px 5px #331122;
+    border-radius: 17px;
+    background-color: #DD8755; }
 
 /* Media queries */
 @media screen and (min-width: 576px) and (max-width: 768px) {
@@ -403,8 +438,8 @@ img {
       justify-content: space-around;
       align-items: center; }
   .header .link-active {
-    background-color: #94692a;
-    color: #ffffff;
+    background-color: #ffddcc;
+    color: #ffeeeeee;
     padding: .8rem;
     border-radius: 15px; }
   .banner {
@@ -431,11 +466,11 @@ img {
     .header__nav a {
       transition: all .3s; }
       .header__nav a:hover {
-        color: #bb8535;
-        text-shadow: 1px 1px 3px #bb8535; }
+        color: #DD8755;
+        text-shadow: 1px 1px 3px #DD8755; }
     .header__nav .link-active {
-      background-color: #94692a;
-      color: #ffffff;
+      background-color: #ffddcc;
+      color: #ffeeeeee;
       padding: .8rem;
       border-radius: 15px; }
   .banner {
@@ -445,7 +480,7 @@ img {
   .shop a {
     transition: all .3s; }
     .shop a:hover {
-      background-color: #bb8535; }
+      background-color: #DD8755; }
   .nosotros {
     display: flex;
     flex-direction: row;
@@ -465,15 +500,15 @@ img {
     width: 50%;
     transition: all .4s; }
     .form__btn:hover {
-      background-color: #bb8535; }
+      background-color: #DD8755; }
   .vt a {
     transition: all .3s; }
     .vt a:hover {
-      background-color: #bb8535; }
+      background-color: #DD8755; }
   .secnosotros a {
     transition: all .3s; }
     .secnosotros a:hover {
-      background-color: #bb8535; }
+      background-color: #DD8755; }
   .tienda__titulo {
     padding: 2rem; }
   .tienda__productos {
@@ -481,15 +516,15 @@ img {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 2rem; }
     .tienda__productos a:hover {
-      background-color: #bb8535;
-      color: #ffffff; }
+      background-color: #DD8755;
+      color: #ffeeeeee; }
     .tienda__productos img:hover {
       transform: scale(1.3); }
   .qya {
     text-align: start; }
     .qya h1 {
       text-align: center;
-      color: #333;
+      color: #331122;
       font-size: 4.5em;
       margin-bottom: 2.5rem;
       padding-top: 2.5rem; }
@@ -508,5 +543,5 @@ img {
     transition: all .3s; }
     .footer__li a:hover {
       padding: .1rem;
-      background-color: #94692a;
-      color: #ffffff; } }
+      background-color: #ffddcc;
+      color: #ffeeeeee; } }

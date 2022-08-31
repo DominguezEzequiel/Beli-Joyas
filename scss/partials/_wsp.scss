@@ -1,0 +1,13 @@
+.wsp {
+    
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+   
+    img {
+        width: 75px;
+        box-shadow: 3px 3px 5px $text-color; 
+        border-radius: 17px;
+        background-color: $hover;
+    }
+}
