@@ -3,9 +3,8 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    background-color: #ffffff;
+    background-color: rgb(255, 240, 240);
     &__titulo {
-        background: linear-gradient(180deg, rgba(187, 133, 53, 1) 0%, rgba(254, 254, 254, 1) 100%);
         color: $text-color;
         font: small-caps $text-md georgia;
         padding: $spacing-xs;
@@ -26,14 +25,13 @@
     }
 
     .producto {
-        @include flex(column, space-evenly, center);
-        background-color: $secondary;
+        @include flex(column, space-between, center);
+        background-color: #ffffff;
         border: 1px solid $hover;
         border-radius: 15px;
         width: 100%;
-        height: 37rem;
+        height: 100%;
         transition: all .3s;
-        flex-wrap: wrap;
 
         img {
             transition: all .3s;
@@ -41,7 +39,7 @@
         }
 
         &__texto {
-            @include flex(column, space-around, center);
+            @include flex(column, space-between, center);
             h3 {
                 font-size: $text-xs;
                 padding: .3rem;
@@ -59,10 +57,29 @@
                 border: 1px solid $primary;
                 border-radius: 15px;
                 padding: .8rem;
+                background-color: $hover;
+                color: $secondary;
             }
         }
 
         
 
+    }
+    .pagination {
+        height: $spacing-xl;
+        @include flex(row, center, center);
+        i {
+            border: 1px solid $hover;
+            color: $hover;
+            background-color: $primary;
+            padding: .5rem;
+            font-size: $text-xs;
+            width: 25px;
+            text-align: center;
+        }
+        .link-active {
+            background-color: $hover;
+            color: $secondary;
+        }
     }
 }

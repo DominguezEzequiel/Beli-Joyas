@@ -4,8 +4,8 @@
     background-color: $secondary;
     grid-template-columns: repeat(2 1fr);
     grid-template-rows: auto;
-    grid-template-areas: "nav cont"
-                         "nav  redes"
+    grid-template-areas: "nav redes"
+                         "cont cont"
                          "pagos pagos"
                          "copy copy";  
    margin: auto; 
@@ -62,7 +62,7 @@
    }
    &__redes {
     grid-area: redes;
-    @include flex(column, center, center);
+    @include flex(column, flex-start, center);
     ul {
         display: flex;
         flex-direction: row;
@@ -83,6 +83,6 @@
    .link-active {
     background-color: $hover;
     color: $secondary;
-    padding: .1rem;
+    padding: 0 .6rem;
 }
 }

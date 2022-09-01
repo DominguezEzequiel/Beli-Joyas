@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Todo lo que buscar en un solo lugar, alianzas, pulseras, collares de plata y oro.">
     <meta name="keywords" content="Tienda, Joyas, Plata, Oro, Puslera, Anillo, Pendientes">
+    <!-- ANIMATE CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>Belli Joyas - Tienda</title>
     <link rel="stylesheet" href="../css/estilos.css">
     <script src="https://kit.fontawesome.com/5ce1298dc3.js" crossorigin="anonymous"></script>
@@ -21,26 +23,30 @@
         </picture>
         <nav class="header__nav">
             <ul class="menu">
-                <li class="menu__li hvr-underline-from-left"><a href="../index.html">HOME</a></li>
-                <li class="menu__li hvr-underline-from-left"><a class="link-active" href="#">TIENDA</a></li>
-                <li class="menu__li hvr-underline-from-left"><a href="preguntas.html">PREGUNTAS FRECUENTES</a></li>
-                <li class="menu__li hvr-underline-from-left"><a href="nosotros.html">NOSOTROS</a></li>
-                <li class="menu__li hvr-underline-from-left"><a href="contacto.html">CONTACTANOS</a></li>
+                <li class="menu__li"><a href="../index.html">HOME</a></li>
+                <li class="menu__li"><a class="link-active" href="#">TIENDA</a></li>
+                <li class="menu__li"><a href="nosotros.html">NOSOTROS</a></li>
             </ul>
         </nav>
     </header>
     <!-- FIN DEL HEADER -->
     <main>
+        <!-- LOGO WSP -->
+        <a class="wsp" href="#">
+            <img src="../multimedia/icons/whatsapp.png" alt="Logo whatsapp">
+        </a>
         <!-- Banner -->
         <div class="banner">
-            <h2>TIENDA</h2>
+            <h2 class="animate__animated animate__fadeInUp">TIENDA</h2>
+            <a href="#tienda"><i class="fa-solid fa-chevron-down"></i></a>
+
         </div>
 
         <!-- Seccion tienda -->
 
-        <section class="tienda">
+        <section class="tienda" id="tienda">
             <article class="tienda__titulo">
-                <h1>¡TU NUEVA JOYA FAVORITA YA LLEGÓ!</h1>
+                <h1 class="animate__animated animate__fadeInLeft animate__delay-1s">¡TU NUEVA JOYA FAVORITA YA LLEGÓ!</h1>
             </article>
             <article class="tienda__productos">
                 <div class="producto">
@@ -140,6 +146,13 @@
                     </div>    
                 </div>
             </article>
+            <div class="pagination">
+                <a href=""><i class="fa-solid fa-angle-left"></i></a>
+                <a href=""><i class="fa-solid fa-1 link-active"></i></a>
+                <a href=""><i class="fa-solid fa-2"></i></a>
+                <a href=""><i class="fa-solid fa-3"></i></a>
+                <a href=""><i class="fa-solid fa-angle-right"></i></a>
+            </div>
         </section>
     </main>
    
@@ -150,9 +163,7 @@
             <ul class="footer__ul">
                 <li class="footer__li"> <a href="../index.html"> HOME </a> </li>
                 <li class="footer__li"> <a class="link-active" href="#head"> TIENDA </a> </li>
-                <li class="footer__li"> <a href="preguntas.html"> PREGUNTAS FRECUENTES </a></li>
                 <li class="footer__li"> <a href="nosotros.html"> NOSOTROS </a></li>
-                <li class="footer__li"> <a href="contacto.html"> CONTACTANOS </a></li>
             </ul>
         </div>
 
