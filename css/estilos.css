@@ -211,66 +211,10 @@ img {
     padding: .3rem;
     font-size: 2.4em; }
 
-/* Contactanos page */
-.cont {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  flex-wrap: wrap;
-  background-color: #ffeeeeee;
-  max-width: 100%;
-  box-shadow: 0px 3px 10px 4px #333;
-  border: 1px solid #ffddcc;
-  margin: 2rem; }
-  .cont__form {
-    text-align: center;
-    margin-top: 4.7rem;
-    color: #331122;
-    width: 100%;
-    padding-bottom: 2.5rem;
-    font-size: 1.3em; }
-    .cont__form h1 {
-      font: small-caps 4.5em georgia;
-      color: #331122;
-      margin-bottom: 2rem; }
-    .cont__form p {
-      color: #331122;
-      font: small-caps 2em georgia;
-      margin-bottom: 4.7rem; }
-    .cont__form .form__input {
-      outline: none;
-      width: 80%;
-      padding: 1rem;
-      margin: 1rem;
-      border-radius: 5px;
-      border: transparent;
-      border-bottom: 1px solid #ffddcc; }
-      .cont__form .form__input:focus {
-        background: linear-gradient(0deg, #bb8535 0%, white 42%); }
-    .cont__form .form__btn {
-      font-size: 2em;
-      width: 80%;
-      padding: 1rem;
-      margin: 1rem;
-      border: 1px solid #ccc;
-      background-color: #ffddcc;
-      color: #ffeeeeee; }
-    .cont__form .form__text {
-      font-size: 1.3em;
-      margin: 1rem;
-      width: 80%;
-      padding: 1rem;
-      border-radius: 5px;
-      border: transparent;
-      border-bottom: 1px solid #ffddcc; }
-      .cont__form .form__text:focus {
-        background: linear-gradient(0deg, #bb8535 0%, white 42%); }
-
 /* Nosotros page */
 .secnosotros {
   height: 100%;
-  background-color: #ffeeeeee;
+  background-color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -284,7 +228,8 @@ img {
     text-align: center;
     margin: 5.3rem 0;
     padding: 1rem;
-    border: 1px solid #ffddcc; }
+    border: 1px solid #ffddcc;
+    background-color: #ffeeeeee; }
   .secnosotros__mapa {
     width: 100%;
     border: 1px solid #ffddcc; }
@@ -311,15 +256,71 @@ img {
       color: #331122;
       padding: .4rem; }
     .secnosotros__tel a {
-      color: #ffeeeeee;
+      color: #331122;
       font: small-caps 1.3em georgia;
       background-color: #ffddcc;
       padding: .5rem; }
-  .secnosotros .vt a {
-    background-color: #ffddcc;
+  .secnosotros .vertienda a {
+    background-color: #fff;
     font: small-caps 2.4em georgia;
-    color: #ffeeeeee;
-    padding: 1rem; }
+    color: #331122;
+    padding: 1rem;
+    border: 1px solid #ffddcc; }
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #ffeeeeee;
+  max-width: 100%;
+  box-shadow: 0px 3px 10px 4px #333;
+  border: 1px solid #ffddcc;
+  margin: 2rem; }
+  .form .formulario {
+    text-align: center;
+    margin-top: 4.7rem;
+    color: #331122;
+    width: 100%;
+    padding-bottom: 2.5rem;
+    font-size: 1.3em; }
+    .form .formulario h1 {
+      font: small-caps 4.5em georgia;
+      color: #331122;
+      margin-bottom: 2rem; }
+    .form .formulario p {
+      color: #331122;
+      font: small-caps 2em georgia;
+      margin-bottom: 4.7rem; }
+    .form .formulario .form__input {
+      outline: none;
+      width: 80%;
+      padding: 1rem;
+      margin: 1rem;
+      border-radius: 5px;
+      border: transparent;
+      border-bottom: 1px solid #ffddcc; }
+      .form .formulario .form__input:focus {
+        background: linear-gradient(0deg, #bb8535 0%, white 42%); }
+    .form .formulario .form__btn {
+      font-size: 2em;
+      width: 80%;
+      padding: 1rem;
+      margin: 1rem;
+      border: 1px solid #DD8755;
+      background-color: #ffddcc;
+      color: #331122; }
+    .form .formulario .form__text {
+      font-size: 1.3em;
+      margin: 1rem;
+      width: 80%;
+      padding: 1rem;
+      border-radius: 5px;
+      border: transparent;
+      border-bottom: 1px solid #ffddcc; }
+      .form .formulario .form__text:focus {
+        background: linear-gradient(0deg, #bb8535 0%, white 42%); }
 
 /* Tienda page */
 .tienda {
